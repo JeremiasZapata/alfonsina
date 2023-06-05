@@ -1,0 +1,12 @@
+.hrFooter {
+    border-top: 1px solid;
+    border-bottom: 0px solid;
+    color: white;
+    height:0;
+    opacity: 1;
+}
+.divContainerFooter{
+    height: 250px; 
+    padding-Top: 10px; 
+    background-Color: black;
+}
