@@ -1,12 +1,13 @@
 import React from 'react';
+import './Footer.css'
 
 
 const Footer = () => {
   return (
-    <div className="container-fluid">
+    <div className="divContainerFooter container-fluid">
         <div className="raw ">
             <div className="col">
-                <hr className="bg-dark"/>
+                <hr className="hrFooter"/>
             </div>
         </div>
     </div>
