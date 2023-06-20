@@ -1,12 +1,9 @@
-.hrFooter {
-    border-top: 1px solid;
-    border-bottom: 0px solid;
-    color: white;
-    height:0;
-    opacity: 1;
-}
-.divContainerFooter{
-    height: 250px; 
-    padding-Top: 10px; 
-    background-Color: black;
+.FooterClass{
+    position: absolute;
+    width: 100%;
+    height: 594px;
+    left: 0px;
+    top: 4172px;
+
+    background: #171717;
 }

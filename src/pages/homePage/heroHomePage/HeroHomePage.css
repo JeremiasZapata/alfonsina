@@ -1,0 +1,27 @@
+.HomePage{
+    height: 100vh;
+    background-color: #D9D9D9;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.HomeTitleClass{
+    position: absolute;
+    width: 616px;
+    height: 140px;
+    left: 204px;
+    top: 430px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 70px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+
+    color: #000000;
+}
