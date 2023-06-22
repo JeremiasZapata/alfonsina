@@ -1,0 +1,11 @@
+.containerCursos {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerDivCursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 225px;
+}

@@ -1,9 +1,8 @@
-.HeroCursosClass{
-    position: absolute;
+.HeroCursosContainer{
+    position: relative;
     width: 100%;
     height: 636px;
     left: 0px;
-    top: 147px;
 
     display: flex;
     flex-direction: column;
