@@ -1,0 +1,64 @@
+.CardLeftSide{
+    /* Layout */
+    width: 616px;
+    height: 796px;
+    flex-shrink: 0;
+
+    /* Style */
+    border-radius: 20px 0px 0px 20px;
+    background: #C8C8C8;
+}
+
+.InfoCertificado{
+    /* Layout */
+    display: flex;
+    width: 330px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 38px;
+    margin-left: 30px;
+
+    /* Style */
+    border-radius: 30px;
+    background: #7E7E7E;
+}
+
+.textCertificado{
+    /* Layout */
+    display: flex;
+    width: 330px;
+    height: 26px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin: auto;
+
+    /* Typography */
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-family: Roboto;
+    font-weight: 500;
+}
+
+
+.TituloCursoContainer{
+    /* Layout */
+    display: flex;
+    width: 458px;
+    height: 29px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 537px;
+    margin-left: 30px;
+
+    /* Typography */
+    color: #000;
+    font-size: 45px;
+    font-family: Roboto;
+    font-weight: 700;
+    text-transform: capitalize;
+}

@@ -1,0 +1,6 @@
+.CardRightSide{
+    /* Layout */
+    width: 896px;
+    height: 796px;
+    flex-shrink: 0;
+}
