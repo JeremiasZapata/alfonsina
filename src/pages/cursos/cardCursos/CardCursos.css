@@ -5,6 +5,7 @@
     flex-shrink: 0;
     background: #F9F9F9;
     display: flex;
+    margin-top: 70px;
 
     /* Style */
     border-radius: 20px;
