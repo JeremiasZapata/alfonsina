@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { HeroCursos } from "./heroCursos/HeroCursos"
 import { CardCursos } from "./cardCursos/CardCursos"
 import "./Cursos.css";
@@ -30,11 +30,24 @@ export const Cursos = () => {
         obtenerDatos();
     }, []);
 
-    console.log(datosCursos)
+    const cursosRef = useRef(null);
+
+    useEffect(() => {
+        console.log('Refs', cursosRef.current);
+    }, []);
+
+    const handleScrollTo = () => {
+        let ref = cursosRef;
+        if (ref && ref.current) {
+            console.log(ref)
+            ref.current.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+
     return(
         <div className="containerCursos">
-            <HeroCursos/>
-            <div className="containerDivCursos">
+            <HeroCursos handleScrollTo={handleScrollTo}/>
+            <div ref={cursosRef} className="containerDivCursos">
                 {
                     datosCursos.map((curso) => (
                         <CardCursos curso={curso} key={curso.nombre}/>
