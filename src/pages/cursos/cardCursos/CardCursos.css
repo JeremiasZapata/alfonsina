@@ -1,11 +1,11 @@
 .CardCursosClass {
     /* Layout */
-    width: 1512px;
-    height: 796px;
+    width: 1210px;
+    height: 636px;
     flex-shrink: 0;
     background: #F9F9F9;
     display: flex;
-    margin-top: 70px;
+    margin-top: 60px;
 
     /* Style */
     border-radius: 20px;

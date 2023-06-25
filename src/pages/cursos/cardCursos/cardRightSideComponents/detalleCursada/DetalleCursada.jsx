@@ -8,7 +8,7 @@ import icoClock from "../../../../../Icons/clock.svg"
 export const DetalleCursada = ({curso}) => {
     return(
         <div className="DetalleCursadaContainer">
-            <div className="IcoLocation">
+            <div className="Ico">
                 <img alt="icoLocation" src={icoLocation} />
             </div>
             <div className="DetalleModalidadContainer">
