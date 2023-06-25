@@ -1,0 +1,4 @@
+.containerSobreNosotras {
+    display: flex;
+    flex-direction: column;
+}

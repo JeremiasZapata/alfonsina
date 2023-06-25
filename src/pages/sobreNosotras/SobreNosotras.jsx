@@ -3,6 +3,8 @@ import { HeroSobreNosotras } from "./heroSobreNosotras/HeroSobreNosotras"
 
 export const SobreNosotras = () => {
     return(
-        <HeroSobreNosotras/>
+        <div className="containerSobreNosotras">
+            <HeroSobreNosotras/>
+        </div>
     );
 }

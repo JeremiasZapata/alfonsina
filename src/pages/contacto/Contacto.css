@@ -2,11 +2,3 @@
     display: flex;
     flex-direction: column;
 }
-
-.containerDivCursos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 155px;
-}
