@@ -4,11 +4,11 @@ import "./CardCursos.css"
 import { CardLeftSide } from "./cardLeftSideComponents/CardLeftSide"
 import { CardRightSide } from "./cardRightSideComponents/CardRightSide"
 
-export const CardCursos = () => {
+export const CardCursos = ({curso}) => {
     return(
         <div className="CardCursosClass">
-            <CardLeftSide/>
-            <CardRightSide/>
+            <CardLeftSide curso={curso}/>
+            <CardRightSide curso={curso}/>
         </div>
     );
 }

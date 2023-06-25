@@ -37,7 +37,7 @@ export const Cursos = () => {
             <div className="containerDivCursos">
                 {
                     datosCursos.map((curso) => (
-                        <CardCursos key={curso.nombre}/>
+                        <CardCursos curso={curso} key={curso.nombre}/>
                     ))
                 }
             </div>

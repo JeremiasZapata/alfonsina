@@ -5,7 +5,7 @@ import icoCalendar from "../../../../../Icons/calendar.svg"
 import icoClock from "../../../../../Icons/clock.svg"
 
 
-export const DetalleCursada = () => {
+export const DetalleCursada = ({curso}) => {
     return(
         <div className="DetalleCursadaContainer">
             <div className="IcoLocation">
@@ -15,7 +15,7 @@ export const DetalleCursada = () => {
                 <div className="DetalleModalidadTitulo">
                     Modalidad:
                 </div>
-                <div className="DetalleModalidad">Presencial</div>
+                <div className="DetalleModalidad">{curso.modalidad}</div>
             </div>
             <div className="IcoCalendar">
                 <img alt="icoCalendar" src={icoCalendar} />
@@ -24,7 +24,7 @@ export const DetalleCursada = () => {
                 <div className="DetalleDuracionTitulo">
                     Duración:
                 </div>
-                <div className="DetalleDuracion">5 meses</div>
+                <div className="DetalleDuracion">{curso.duracion}</div>
             </div>
             <div className="IcoClock">
                 <img alt="icoClock" src={icoClock} />
@@ -33,7 +33,11 @@ export const DetalleCursada = () => {
                 <div className="DetalleFrecuenciaTitulo">
                     Frecuencia:
                 </div>
-                <div className="DetalleFrecuencia">1 clase semanal de 3hs</div>
+                {
+                    curso.frecuencia.clasesSemanal === 1
+                    ?<div className="DetalleFrecuencia">{curso.frecuencia.clasesSemanal} clase semanal de {curso.frecuencia.duracionHoras}hs</div>
+                    :<div className="DetalleFrecuencia">{curso.frecuencia.clasesSemanal} clases semanales de {curso.frecuencia.duracionHoras}hs</div>
+                }
             </div>
         </div>
     );

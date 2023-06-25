@@ -24,7 +24,17 @@
     border-radius: 30px;
     background: #7E7E7E;
     animation: desplazar 2.5s infinite;
+}
 
+.HideInfoCertificado{
+    display: flex;
+    width: 330px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 38px;
+    margin-left: 30px;
 }
 
 @keyframes desplazar {

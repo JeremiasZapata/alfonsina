@@ -11,12 +11,12 @@
 			"duracionHoras": 3
 		},
 		"nivel": {
-			"nombre": "inicial",
+			"nombre": "Inicial",
 			"descripcion": "No requiere conocimientos previos"
 		},
 		"temario": {
 			"temarioGeneral": "Manicuria. Esmaltado semipermanente. Capping.",
-			"temarioGeneralDescripcion": "Correcta preparación de la uña natural. Biotipos ungueales. Tipos de preparadores químicos. Retiro de cutícula profundo sin torno. Esmaltado perfecto. Tipos de gel y viscosidades. Capping con base rubber. Capping con gel. Encapsulados."
+			"temarioDescripcion": "Correcta preparación de la uña natural. Biotipos ungueales. Tipos de preparadores químicos. Retiro de cutícula profundo sin torno. Esmaltado perfecto. Tipos de gel y viscosidades. Capping con base rubber. Capping con gel. Encapsulados."
 		},
 		"valores": {
 			"inscripcion": {
@@ -38,16 +38,16 @@
 		"duracion": "5 meses",
 		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
 		"frecuencia": {
-			"clasesSemanal": 1,
-			"duracionHoras": 3
+			"clasesSemanal": 2,
+			"duracionHoras": 1
 		},
 		"nivel": {
-			"nombre": "inicial",
+			"nombre": "Inicial",
 			"descripcion": "No requiere conocimientos previos"
 		},
 		"temario": {
 			"temarioGeneral": "Manicuria. Esmaltado semipermanente. Capping.",
-			"temarioGeneralDescripcion": "Correcta preparación de la uña natural. Biotipos ungueales. Tipos de preparadores químicos. Retiro de cutícula profundo sin torno. Esmaltado perfecto. Tipos de gel y viscosidades. Capping con base rubber. Capping con gel. Encapsulados."
+			"temarioDescripcion": "Correcta preparación de la uña natural. Biotipos ungueales. Tipos de preparadores químicos. Retiro de cutícula profundo sin torno. Esmaltado perfecto. Tipos de gel y viscosidades. Capping con base rubber. Capping con gel. Encapsulados."
 		},
 		"valores": {
 			"inscripcion": {
