@@ -1,9 +1,9 @@
 .ContactoClass{
-    position: absolute;
+    height: 331px;
+    flex-shrink: 0;
+    position: relative;
     width: 100%;
-    height: 414px;
     left: 0px;
-    top: 147px;
 
     display: flex;
     justify-content: center;
@@ -14,16 +14,16 @@
 
 .ContactoTituloClass{
     position: absolute;
-    /* width: 616px; */
-    height: 84.49px;
+    width: 492px;
+    height: 68px;
     /* left: calc(50% - 616px/2); */
     top: 150px;
 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    font-size: 60px;
-    line-height: 70px;
+    font-size: 48px;
+    line-height: 60px;
     display: flex;
     align-items: center;
     text-align: center;
