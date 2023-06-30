@@ -4,15 +4,25 @@
     height: 115px;
     left: 0px;
     top: 0px;
+    padding-left: 20px;
 
     display: flex;
     align-items: center;
     background: #FFFFFF;
 }
 
+.NavBarBrand{
+    /* Layout */
+    width: 146px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-left: 143px;
+    background-color: black;
+}
+
 .LinkNavBar{
     position: relative;
-    left: 150px;
+    left: 60px;
     text-decoration: none;
     font-family: 'Roboto';
     font-style: normal;
@@ -23,5 +33,7 @@
     align-items: center;
     text-transform: capitalize;
     color: #000000;
-    margin-right: 20px;
+    background-color: #FFFFFF;
+    margin-right: 40px;
 }
+
