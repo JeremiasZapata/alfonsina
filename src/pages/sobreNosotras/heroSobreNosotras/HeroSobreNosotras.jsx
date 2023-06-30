@@ -5,8 +5,8 @@ export const HeroSobreNosotras = () => {
     return(
         <div className="SobreNosotrasClass">
             <div className="SobreNosotrasTituloClass">
-                <p className="SobreNosotrasSubTituloText">Lorem ipsum dolor sit amet consectetur.</p>
-                <p className="SobreNosotrasTituloText">Lorem ipsum dolor</p>
+                <div className="SobreNosotrasSubTituloText">Lorem ipsum dolor sit amet consectetur.</div>
+                <div className="SobreNosotrasTituloText">Lorem impsum dolor</div>
             </div>
             <div className="ImagenesHeroContainer">
                 <div className="ImagenesIzq">
