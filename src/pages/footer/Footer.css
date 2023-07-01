@@ -1,4 +1,4 @@
-.FooterClass{
+.FooterClass {
     position: absolute;
     width: 100%;
     height: 475px;
@@ -7,7 +7,7 @@
     background: #171717;
 }
 
-.FooterContainer{
+.FooterContainer {
     /* Layout */
     position: relative;
     display: flex;
@@ -17,15 +17,15 @@
     top: 50%;
 }
 
-.LeftFooter{
+.LeftFooter {
     /* Layout */
     position: relative;
     width: 33%;
     height: 100%;
-    background-color:red;
+    align-items: center;
 }
 
-.NavegacionTitulo{
+.NavegacionTitulo {
     /* Layout */
     display: flex;
     width: 110px;
@@ -33,28 +33,95 @@
     flex-direction: column;
     flex-shrink: 0;
 
+
     /* Typography */
-    color: #FFF;
+    color: #fff;
     font-size: 14px;
     font-family: Roboto;
     font-weight: 700;
     text-transform: capitalize;
 }
 
-.CenterFooter{
+.LinkFooterNav {
+
+
+    width: 182px;
+    height: 98px !important;
+    flex-shrink: 0;
+    margin-top: 15px !important ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    height: 100%;
+    
+
+}
+.LinkFooterNav a {
+    color: #FFF;
+font-size: 14px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize; 
+  }
+
+.CenterFooter {
     /* Layout */
     position: relative;
     width: 33%;
     height: 100%;
-    background-color: blue;
+
 }
+.LinkFooterInf {
 
 
+    width: 182px;
+    height: 63px !important;
+    flex-shrink: 0;
+    margin-top: 15px !important ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.LinkFooterInf a {
+    color: #FFF;
+font-size: 14px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: capitalize; 
+  }
 
-.RightFooter{
+.RightFooter {
     /* Layout */
     position: relative;
     width: 34%;
     height: 100%;
-    background-color: yellow;
+    
 }
+
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+  }
+
+  .whatsapp-logo img {
+    width: 50px; 
+    height: 50px;
+    border-radius: 50%; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .whatsapp-logo img:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+  }
