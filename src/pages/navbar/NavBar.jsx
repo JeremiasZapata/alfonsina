@@ -19,3 +19,13 @@ export const NavBar = () =>{
         </Navbar>
     );
 }
+
+
+
+
+
+
+
+
+
+
