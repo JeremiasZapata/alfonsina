@@ -1,4 +1,5 @@
-.NavBar{
+/* .NavBar{
+    margin-top: 121px;
     position: relative;
     width: 100%;
     height: 115px;
@@ -12,12 +13,14 @@
 }
 
 .NavBarBrand{
-    /* Layout */
-    width: 146px;
-    height: 48px;
+   
+    width: 512px;
+    height: 196px;
     flex-shrink: 0;
     margin-left: 143px;
-    background-color: black;
+    background-image: url('../assets/Logotipo-1.png')!important;
+    background-size: contain;
+    
 }
 
 .LinkNavBar{
@@ -35,5 +38,55 @@
     color: #ffffff;
     background-color: #DA1972;
     margin-right: 40px;
-}
+} */
+
+.NavBar {
+    /* margin-top: 121px; */
+    position: relative;
+    width: 100%;
+    height: 115px;
+    left: 0px;
+    top: 0px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    background: #DA1972;
+  }
+  
+  
+  .NavBarBrandWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+  
+  .NavBarBrand {
+    
+    width: 512px;
+    height: 120px;
+    flex-shrink: 0;
+    background-image: url('../assets/Logotipo-1.png')!important;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .LinkNavBar {
+    position: relative;
+    left: 60px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    color: #ffffff;
+    background-color: #DA1972;
+    margin-right: 40px;
+  }
+  
 
