@@ -1,5 +1,5 @@
-.NavBar{
-    /* position: relative; */
+/* .NavBar{
+   
     width: 100%;
     height: 115px;
     left: 0px;
@@ -34,10 +34,15 @@
     display: flex;
     align-items: center;
     text-transform: capitalize;
-    color: #ffffff;
-    background-color: #DA1972;
+    color: #000000;
+    background-color: inherit;
     margin-right: 40px;
+}
+
+.HeaderContainer{
+    height: 117px;
 } */
+
 
 .NavBar {
     /* margin-top: 121px; */
@@ -51,18 +56,18 @@
     align-items: center;
     background: #DA1972;
   }
-  
-  
+ 
+ 
   .NavBarBrandWrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
+   
+   
   }
-  
+ 
   .NavBarBrand {
-    
+   
     width: 512px;
     height: 120px;
     flex-shrink: 0;
@@ -70,7 +75,7 @@
     background-size: contain;
     background-repeat: no-repeat;
   }
-  
+ 
   .LinkNavBar {
     position: relative;
     left: 60px;
@@ -86,8 +91,4 @@
     color: #ffffff;
     background-color: #DA1972;
     margin-right: 40px;
-}
-
-.HeaderContainer{
-    height: 117px;
-}
+  }
