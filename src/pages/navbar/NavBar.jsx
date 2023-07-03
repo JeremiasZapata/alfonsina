@@ -5,6 +5,10 @@ import { Navbar, Nav } from 'react-bootstrap'; // Importa los componentes necesa
 
 export const NavBar = () =>{
     return(
+        <div>
+            <div className="HeaderContainer">
+
+            </div>
         <Navbar expand="lg  NavBar">
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Brand className="NavBarBrand">Mi Sitio</Navbar.Brand>
@@ -17,5 +21,6 @@ export const NavBar = () =>{
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        </div>
     );
 }
