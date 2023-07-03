@@ -1,24 +1,146 @@
-.HomePage{
+.HeroHomePage{
     height: 100vh;
     background-color: #D9D9D9;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    padding-top: 4%;
+    flex-direction: row;
 }
 
-.HomeTitleClass{
-    position: absolute;
-    width: 493px;
-    height: 112px;
-    left: 163px;
-    top: 344px;
+.LeftHeroContainer{
+    /* Layout */
+    position: relative;
+    margin-left: 10%;
+    align-items: center;
+    display: column;
+    padding-top: 15%;
 
-    font-family: 'Roboto';
+    width: 40%;
+    height: 90%;
+}
+
+.HeroHomeSubTitleContainer{
+    /* Layout */
+    display: flex;
+    width: 60.3%;
+    height: 5%;
+    /* justify-content: center; */
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.HeroHomeSubTitleText{
+    /* Typography */
+    color: #DA1972;
+    text-align: center;
+    font-size: 19px;
+    font-family: Inter;
     font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 60px;
-    text-transform: capitalize;
+    font-weight: 700;
+    line-height: normal;
+}
 
-    color: #000000;
+.HeroHomeTitleContainer{
+    /* Layout */
+    height: 43%;
+    width: 100%;
+    margin-top: 1.3%;
+}
+
+.HeroHomeTitleText{
+    color: #000;
+    font-size: 38px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+}
+
+.BtnContactar{
+    /* Layout */
+    margin-top: auto !important;
+    width: 111px !important;
+    height: 44px !important;
+    /* flex-direction: column; */
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    border-radius: 16px !important;
+    background: #771135 !important;
+    top: 10%;
+
+    /* Typography */
+    color: #FFF !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    font-family: 'Roboto' !important;
+    font-weight: 700px !important;
+    text-transform: capitalize !important;
+}
+
+.RightHeroContainer{
+    /* Layout */
+    width: 38%;
+    height: 90%;
+    display: flex;
+    flex-shrink: 0;
+    border-radius: 55px;
+    background-image: url("./img/imgHeroHomePage.png");
+    background-size: cover;
+    background-position: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .HeroHomePage{
+        height: 100vh;
+        background-color: #D9D9D9;
+        display: flex;
+        padding: 0;
+        flex-direction: row;
+    }
+    .LeftHeroContainer{
+        width: auto;
+        margin-left: auto;
+        padding: 5%;
+        /* padding-top: 40%; */
+        background-color: #000;
+        background: linear-gradient(#D9D9D9, rgba(0, 0, 0, 0.01)), url("./img/imgHeroHomePage.png");
+        /* background-image: url("./img/imgHeroHomePage.png"); */
+        background-size: cover;
+        background-position: center;
+    }
+    .HeroHomeSubTitleContainer{
+        width: 100%;
+    }
+    .HeroHomeSubTitleText{
+        /* Typography */
+        color: #DA1972;
+        text-align: center;
+        font-size: 16px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        /* text-shadow: #FFF 1px 0 10px; */
+    }
+    .HeroHomeTitleContainer{
+
+    }
+    .HeroHomeTitleText{
+        color: #000;
+        font-size: 30px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        background-color: inherit;
+        /* text-shadow: #DA1972 1px 0 10px; */
+    }
+    .BtnContactar{
+        top: 10%
+    }
+
+    .RightHeroContainer {
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
 }
