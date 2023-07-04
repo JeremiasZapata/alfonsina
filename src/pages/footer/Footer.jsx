@@ -1,6 +1,9 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom'
 import './Footer.css'
+import imagotipo from "../assets/Imagotipo-6.png"
+import instagram from "../assets/instagram.svg"
+import whatsapp from "../assets/whatsapp (3).svg"
 
 
 
@@ -55,8 +58,11 @@ const Footer = () => {
 
   return (
     <div className="FooterClass">
+      
+      <Link className="navbar-brand-footer" to={"/"}> <img src={imagotipo} alt="logo Alfonsina" width={"197"}/> </Link>
       <div className="FooterContainer">
         <div className="LeftFooter">
+        
           <div className="NavegacionTitulo">
               Navegación
           </div>
@@ -90,9 +96,12 @@ const Footer = () => {
           
             <Link  to="/">Dirección: xxxxxx</Link>
             
-            <Link   to="/nosotras">WhatsApp: xxxxxxx</Link>
-          
-            <Link  to="/contacto">Instagram: @xxxxxx</Link>
+            <div>
+            <Link className="instagram-logo" to={"/"}> <img src={instagram} alt="logo Instagram" width={"30"}/> </Link>
+            <Link className="instagram-logo logoMarginWhatsap" to={"/"}> <img src={whatsapp} alt="logo Instagram" width={"30"}/> </Link>
+            {/* <Link className="whatsapp-logo" to={"/"}> <img src={whatsapp} alt="logo whatsap" width={"30"}/> </Link> */}
+              
+            </div>
             
           </div>
 
@@ -108,3 +117,4 @@ const Footer = () => {
 }
 
 export default Footer
+
