@@ -59,6 +59,7 @@ const Footer = () => {
   return (
     <div className="FooterClass">
       
+      
       <Link className="navbar-brand-footer" to={"/"}> <img src={imagotipo} alt="logo Alfonsina" width={"197"}/> </Link>
       <div className="FooterContainer">
         <div className="LeftFooter">
