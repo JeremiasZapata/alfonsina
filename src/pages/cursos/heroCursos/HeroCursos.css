@@ -3,6 +3,10 @@
     height: 508px;
     left: 0px;
     margin-bottom: 120px;
+    
+    background-image: url('../../assets/backgroundImage.png')!important;
+    background-size: cover;
+    background-position: center;
 
     display: flex;
     flex-direction: column;
