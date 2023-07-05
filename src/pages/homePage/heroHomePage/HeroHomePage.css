@@ -107,6 +107,10 @@
     .BtnContactar{
         transform: scale(0.9)
     }
+    .RightHeroContainer{
+        /* Layout */
+        background-position: right;
+    }
 }
 
 @media only screen and (max-width: 1259px) {
@@ -118,6 +122,10 @@
     .HeroHomeTitleText{
         /* Typography */
         font-size: 30px;
+    }
+    .RightHeroContainer{
+        /* Layout */
+        background-position: right;
     }
 }
 
@@ -180,9 +188,6 @@
     .HeroHomeTitleContainer{
         width: 100%
     }
-}
-
-@media only screen and (max-width: 870px) {
     .HeroHomeSubTitleText{
         /* Typography */
         font-size: 16px;
