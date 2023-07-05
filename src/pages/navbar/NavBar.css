@@ -1,42 +1,145 @@
-.NavBar{
-    /* position: relative; */
-    width: 100%;
-    height: 115px;
-    left: 0px;
-    top: 0px;
-    padding-left: 20px;
-
-    display: flex;
-    align-items: center;
-    background: #DA1972;
+.NavBarBrandWrapper {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.NavBarBrand{
+.NavBarBrand {
+  /* Layout */
+  position: relative;
+  width: 26%;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Logo{
+  position: relative;
+  width: 120%;
+  height: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.NavBar {
+  /* Layout */
+  position: relative;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+  padding-left: 20px;
+  display: flex;
+  align-items: center;
+  background: #DA1972;
+}
+.LinkNavBar {
+  position: relative;
+  left: 60px;
+  text-decoration: none;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 50px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  background-color: #DA1972;
+  margin-right: 40px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .NavBarBrandWrapper{
     /* Layout */
-    width: 146px;
-    height: 48px;
-    flex-shrink: 0;
-    margin-left: 143px;
-    background-color: black;
+    height: 100px;
+  }
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+  }
+
+  .NavBar {
+    /* Layout */
+    height: 80px;
+    padding-left: 15px;
+  }
+  .LinkNavBar {
+    transform: scale(0.95)
+  }
 }
 
-.LinkNavBar{
-    position: relative;
-    left: 60px;
-    text-decoration: none;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 50px;
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
-    color: #000000;
-    background-color: inherit;
-    margin-right: 40px;
+@media only screen and (max-width: 1259px) {
+  .NavBarBrandWrapper{
+    /* Layout */
+    height: 80px;
+  }
+
+  .NavBarBrand {
+    /* Layout */
+    height: 80px;
+  }
+
+  .NavBar {
+    /* Layout */
+    height: 65px;
+    padding-left: 10px;
+  }
+  .LinkNavBar {
+    transform: scale(0.9)
+  }
 }
 
-.HeaderContainer{
-    height: 117px;
+@media only screen and (max-width: 1180px){
+  .NavBarBrandWrapper{
+    /* Layout */
+    height: 70px;
+  }
+  .NavBarBrand {
+    /* Layout */
+    height: 70px;
+  }
 }
+
+@media only screen and (max-width: 900px){
+  .NavBarBrandWrapper{
+    /* Layout */
+    height: 60px;
+  }
+
+  .NavBarBrand {
+    /* Layout */
+    height: 60px;
+  }
+
+  .NavBar {
+    /* Layout */
+    height: 55px;
+    padding-left: 5px;
+  }
+  .LinkNavBar {
+    transform: scale(0.85)
+  }
+  .LinkNavBar {
+    left: 20px;
+  }
+}
+
+@media only screen and (max-width: 870px){}
+
+@media only screen and (max-width: 520px){
+  .LinkNavBar {
+    transform: scale(0.70)
+  }
+  .LinkNavBar {
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 405px){}
+
+@media only screen and (max-width: 370px){}
