@@ -26,15 +26,12 @@
 
 .NavBar {
   /* Layout */
-  position: relative;
-  width: 100%;
-  height: 100px;
-  left: 0px;
-  top: 0px;
-  padding-left: 20px;
-  display: flex;
-  align-items: center;
-  background: #DA1972;
+  position: absolute;
+  height: 110px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center; /* Center vertically */
+  background: #DA1972 !important;
 }
 .LinkNavBar {
   position: relative;
@@ -43,14 +40,23 @@
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 16px !important;
   line-height: 50px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
   color: #ffffff;
-  background-color: #DA1972;
-  margin-right: 40px;
+  background-color: inherit;
+  margin-right: 90px !important;
+}
+
+.Search{
+  background-color: inherit;
+  margin-left: 35% !important;
+  width: 20% !important;
+  border: none !important;
+  text-decoration: none !important;
+  outline: none !important;
 }
 
 @media only screen and (max-width: 1400px) {
@@ -113,7 +119,7 @@
 
   .NavBarBrand {
     /* Layout */
-    height: 60px;
+    height: 100px;
   }
 
   .NavBar {
@@ -128,18 +134,3 @@
     left: 20px;
   }
 }
-
-@media only screen and (max-width: 870px){}
-
-@media only screen and (max-width: 520px){
-  .LinkNavBar {
-    transform: scale(0.70)
-  }
-  .LinkNavBar {
-    left: 10px;
-  }
-}
-
-@media only screen and (max-width: 405px){}
-
-@media only screen and (max-width: 370px){}
