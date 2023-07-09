@@ -1,4 +1,5 @@
 .NavBarBrandWrapper {
+  position: relative;
   width: 100%;
   height: 120px;
   display: flex;
@@ -10,18 +11,24 @@
   /* Layout */
   position: relative;
   width: 26%;
-  height: 120px;
+  height: 100%;
   align-items: center;
   justify-content: center;
+
+  background-image: url("../assets/Logotipo-1.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .Logo{
   position: relative;
   width: 120%;
   height: auto;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  /* left: 50%;
+  top: 50%; */
+  /* transform: translate(-50%, -50%); */
+
+  background-color: red;
 }
 
 .NavBar {
@@ -85,10 +92,10 @@
     height: 80px;
   }
 
-  .NavBarBrand {
-    /* Layout */
+  /* .NavBarBrand {
+    Layout
     height: 80px;
-  }
+  } */
 
   .NavBar {
     /* Layout */
@@ -107,7 +114,8 @@
   }
   .NavBarBrand {
     /* Layout */
-    height: 70px;
+    height: 100%;
+    width: 25%;
   }
 }
 
@@ -119,7 +127,8 @@
 
   .NavBarBrand {
     /* Layout */
-    height: 100px;
+    height: 100%;
+    width: 30%;
   }
 
   .NavBar {
@@ -132,5 +141,41 @@
   }
   .LinkNavBar {
     left: 20px;
+  }
+}
+@media only screen and (max-width: 800px){
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+    width: 40%;
+  }
+}
+@media only screen and (max-width: 600px){
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 500px){
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+    width: 50%;
+  }
+}
+@media only screen and (max-width: 400px){
+  .NavBarBrand {
+    /* Layout */
+    height: 100%;
+    width: 60%;
   }
 }
