@@ -10,7 +10,7 @@ export const NavBar = () => {
     <div>
       <div className="NavBarBrandWrapper">
         <div className="NavBarBrand">
-          <img className="Logo" alt="Logo" src={Logo} />
+          {/* <img className="Logo" alt="Logo" src={Logo} /> */}
         </div>
       </div>
       <CompactNavBar/>

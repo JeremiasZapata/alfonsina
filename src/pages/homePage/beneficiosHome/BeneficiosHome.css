@@ -1,0 +1,186 @@
+.BeneficiosHome{
+    /* Layout */
+    height: 100vh;
+    background-color:#F1EBEE;
+    display: flex;
+    justify-content: center;
+
+}
+
+.BeneficiosHomeContainer{
+    display: inline;
+    justify-content: center;
+    margin-top: 157px;
+}
+
+.BeneficiosHomeTittleContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.BeneficiosHomeTittle{
+    /* Layout */
+    display: flex;
+    width: 535px;
+    height: 84px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+
+
+    /* Typography */
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.BeneficiosContainer{
+    /* Layout */
+    display: flex;
+    flex-wrap: nowrap;
+}
+.BeneficiosContainer2{
+    justify-content: center;
+    flex-wrap: nowrap;
+    display: none;
+}
+
+.BeneficioBox{
+    display: flex;
+    position: relative;
+    width: 401px;/*501px*/
+    height: 270px; /*338px*/
+    justify-content:center;
+}
+
+.BeneficioBox2{
+    display: flex;
+    position: relative;
+    width: 401px;/*501px*/
+    height: 270px; /*338px*/
+    justify-content:center;
+}
+
+.IconBeneficioContainer{
+    /* Layout */
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    flex-shrink: 0;
+    background-color: #FFF;
+    border-radius: 50%;
+    border-color: #A71351;
+    border-width: 4px;
+    border-style: solid;
+    bottom: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconCertificateStyle{
+    width: 121px;
+    height: 121px;
+    margin-top: 30px;
+}
+.iconTrainingStyle{
+    width: 110px;
+    height: 110px;
+}
+.iconManicureStyle{
+    width: 132px;
+    height: 132px;
+}
+
+.IconBeneficioTittleContainer{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    width: 401px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    bottom:0%;
+
+    /* Typography */
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media only screen and (max-width: 1235px) {
+    .BeneficiosHomeContainer{
+        transform: scale(0.8)
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .BeneficiosHomeContainer{
+        display: inline;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .BeneficiosContainer{
+        /* Layout */
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .BeneficioBox:last-child {
+        display: none;/* Elimina el espacio inferior para el último elemento */
+    }
+    .BeneficiosContainer2{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 670px) {
+    .BeneficiosHomeTittle{
+        transform: scale(1)
+    }
+    .BeneficiosHomeTittleContainer{
+        width: auto;
+    }
+    .BeneficiosHome{
+        /* Layout */
+        height: auto;
+    }
+    .BeneficiosContainer{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .BeneficioBox{
+        margin-bottom: 30px;
+    }
+    .BeneficioBox:last-child {
+        display: flex;
+    }
+    .BeneficiosContainer2{
+        display: none;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .BeneficiosHomeContainer{
+        width: 100%;
+    }
+    .BeneficiosHomeTittle{
+        transform: scale(.70)
+    }
+    .BeneficiosHomeTittleContainer{
+        width: 100%;
+    }
+}
