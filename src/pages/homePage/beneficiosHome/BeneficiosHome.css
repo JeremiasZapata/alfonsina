@@ -202,6 +202,19 @@
     .BeneficiosContainer2{
         display: none;
     }
+
+    .animated-element.active1 {
+        opacity: 1;
+        animation: move 0.5s ease-in-out 1;
+    }
+    .animated-element.active2 {
+        opacity: 1;
+        animation: move 1s ease-in-out 1;
+    }
+    .animated-element.active3 {
+        opacity: 1;
+        animation: move 1.5s ease-in-out 1;
+    }
 }
 @media only screen and (max-width: 540px) {
     .BeneficiosHomeContainer{
