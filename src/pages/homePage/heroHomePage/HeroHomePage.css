@@ -151,6 +151,7 @@
         flex-direction: row;
     }
     .LeftHeroContainer{
+        height: 100vh;
         width: auto;
         margin-left: auto;
         padding: 5%;
