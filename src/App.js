@@ -24,7 +24,7 @@ function App() {
           <Route path="/nosotras" element={<SobreNosotras/>}/>
           <Route path="*" element={<HomePage />}/>
         </Routes>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
 
     </div>

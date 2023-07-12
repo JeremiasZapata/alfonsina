@@ -17,15 +17,19 @@
     top: 50%;
 }
 
-.navbar-brand-footer{
+
+.navbar-brand-footer {
     margin-left: 116px;
+}
+.navbar-brand-footer .imagotipo {
+    width: 197px;
 }
 
 .LeftFooter {
     /* Layout */
     position: relative;
     width: 33%;
-    height:auto;
+    height: auto;
     align-items: center;
 }
 
@@ -52,25 +56,27 @@
     width: 182px;
     height: 98px !important;
     flex-shrink: 0;
-    margin-top: 15px !important ;
+    margin-top: 15px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     align-items: flex-start;
     height: 100%;
-    
+
 
 }
+
 .LinkFooterNav a {
     color: #FFF;
-font-size: 14px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: capitalize; 
-  }
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
 
 .CenterFooter {
     /* Layout */
@@ -79,13 +85,14 @@ text-transform: capitalize;
     height: 100%;
 
 }
+
 .LinkFooterInf {
 
 
     width: 182px;
     height: 63px !important;
     flex-shrink: 0;
-    margin-top: 15px !important ;
+    margin-top: 15px !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -93,45 +100,189 @@ text-transform: capitalize;
     align-items: flex-start;
     height: 100%;
 }
+
 .LinkFooterInf a {
     color: #FFF;
-font-size: 14px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-transform: capitalize; 
-  }
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
 
 .RightFooter {
     /* Layout */
     position: relative;
     width: 34%;
     height: 100%;
-    
+
 }
-.logoMarginWhatsap{
+.LinkFooterCont{
+    width: 182px;
+    height: 98px !important;
+    flex-shrink: 0;
+    margin-top: 15px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    align-items: flex-start;
+    height: 100%;
+}
+.LinkFooterCont a {
+    color: #FFF;
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.LogoRedes .logoMarginWhatsap .img-whatsapp{
+    width: 30px;
+}
+.LogoRedes .instagram-logo .img-instagram{
+    width: 30px;
+}
+.LogoRedes{
+    margin-top: 30px;
+}
+
+.logoMarginWhatsap {
     margin-left: 18px;
 }
 
 
 .whatsapp-logo {
     position: fixed;
-    bottom: 20px; 
-    right: 20px; 
-  }
+    bottom: 20px;
+    right: 20px;
+}
 
-  .whatsapp-logo img {
-    width: 50px; 
+.whatsapp-logo img {
+    width: 50px;
     height: 50px;
     background-color: #FFF;
-    border-radius: 50%; 
+    border-radius: 50%;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
     transition: box-shadow 0.3s, transform 0.3s;
-  }
-  .whatsapp-logo img:hover{
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  transform: scale(1.05);
-  }
+}
 
-  
+.whatsapp-logo img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1400px) {
+    .FooterContainer {
+        
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1259px) {
+    /* .FooterContainer {
+        margin-left: 30px;
+        width: 90%;
+    } */
+}
+
+@media only screen and (max-width: 1180px) {
+    .navbar-brand-footer {
+        margin-left: 45px;
+        size: 50px !important;
+    }
+    .FooterContainer {
+        margin-left: 100px;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    
+    .LeftFooter {
+        /* Layout */
+        position: relative;
+        width: 24%;
+        height: auto;
+        align-items: center;
+    }
+    .navbar-brand-footer .imagotipo {
+        width: 150px;
+        margin-left: 25px;
+    }
+    .LinkFooterNav,.LinkFooterInf {
+
+
+        width: 160px;
+        height: 63px !important;
+        flex-shrink: 0;
+        margin-top: 15px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-items: flex-start;
+        height: 100%;
+        }
+    
+
+    
+}
+@media only screen and (max-width: 592px) {
+    .NavegacionTitulo{
+        font-size: 12px;
+    }
+    
+    .LinkFooterNav a, .LinkFooterInf a, .LinkFooterCont a{
+        font-size: 12px;
+    }
+
+    .LogoRedes .instagram-logo .img-instagram{
+        width: 20px;
+    }
+    .LogoRedes .logoMarginWhatsap .img-whatsapp{
+        width: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 520px) {
+    
+    .LinkFooterNav a {
+        color: #FFF;
+        font-size: 10px;
+    }
+
+    .navbar-brand-footer .imagotipo{
+        display: none;
+    }
+    .navbar-brand-footer {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .FooterContainer {
+        margin: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 405px) {
+    .FooterContainer {
+        width: 100%;
+    }
+
+    
+}
+
+@media only screen and (max-width: 370px) {
+    .FooterContainer {
+        margin: 10px;
+    }
+}
