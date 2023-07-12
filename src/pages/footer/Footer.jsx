@@ -60,7 +60,7 @@ const Footer = () => {
     <div className="FooterClass">
       
       
-      <Link className="navbar-brand-footer" to={"/"}> <img src={imagotipo} alt="logo Alfonsina" width={"197"}/> </Link>
+      <Link className="navbar-brand-footer" to={"/"}> <img className='imagotipo' src={imagotipo} alt="logo Alfonsina" /> </Link>
       <div className="FooterContainer">
         <div className="LeftFooter">
         
@@ -93,15 +93,13 @@ const Footer = () => {
         <div className="NavegacionTitulo">
               Contacto
           </div>
-          <div className='LinkFooterNav'>
+          <div className='LinkFooterCont'>
           
             <Link  to="/">Dirección: xxxxxx</Link>
             
-            <div>
-            <Link className="instagram-logo" to={"/"}> <img src={instagram} alt="logo Instagram" width={"30"}/> </Link>
-            <Link className="instagram-logo logoMarginWhatsap" to={"/"}> <img src={whatsapp} alt="logo Instagram" width={"30"}/> </Link>
-            {/* <Link className="whatsapp-logo" to={"/"}> <img src={whatsapp} alt="logo whatsap" width={"30"}/> </Link> */}
-              
+            <div className='LogoRedes'>
+            <Link className="instagram-logo" to={"/"}> <img className='img-instagram' src={instagram} alt="logo Instagram"/> </Link>
+            <Link className="logoMarginWhatsap" to={"https://api.whatsapp.com/send?phone=1156632971"} target="_blank" rel="noopener noreferrer"> <img className='img-whatsapp' src={whatsapp} alt="logo Instagram"/> </Link>
             </div>
             
           </div>
