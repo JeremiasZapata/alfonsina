@@ -1,4 +1,17 @@
-.tipografiaAcordeon{
+
+
+.acordeonContainer{
+    height: 901px;
+}
+.tipografiaAcordeonPregunta{
+    color: #000000;
+font-family: Inter;
+font-style: normal;
+font-weight: bold !important;
+
+}
+
+.tipografiaAcordeonRespuesta{
     color: #000;
 font-family: Inter;
 font-style: normal;
