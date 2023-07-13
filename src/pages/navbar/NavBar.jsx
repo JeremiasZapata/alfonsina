@@ -6,10 +6,14 @@ import { CompactNavBar } from './CompactNavBar'
 
 
 export const NavBar = () => {
+  const handleBrandClick = () => {
+    window.location.href = '/';
+  };
+
   return (
     <div>
       <div className="NavBarBrandWrapper">
-        <div className="NavBarBrand">
+        <div className="NavBarBrand" onClick={handleBrandClick}>
           {/* <img className="Logo" alt="Logo" src={Logo} /> */}
         </div>
       </div>
@@ -17,8 +21,6 @@ export const NavBar = () => {
     </div>
   );
 }
-
-
 
 
 
