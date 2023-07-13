@@ -1,19 +1,28 @@
 .RoadMap{
     height: 180vh;
     background-image:url("./img/background.png");
-    display: flex;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.RoadMap{
+    display: grid;
+    row-gap: 0px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .RoadMapTittleContainer{
     /* Layout */
     position: relative;
-    display: flex;
     width: 100%;
     height: 38px;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
     margin-top:8%;
+    margin-bottom:7%;
+    background-color: aquamarine;
 }
 
 .RoadMapTittleText{
@@ -25,4 +34,34 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.MapaConceptualTittleContainer{
+    /* Layout */
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: antiquewhite;
+    margin-bottom: 0;
+}
+.MapaConceptualConditionalContainer{
+    /* Layout */
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: rgb(252, 96, 96);
+}
+.MapaConceptualCloudContainer{
+    /* Layout */
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: rgb(218, 149, 224);
+}
+.MapaConceptualResultContainer{
+    /* Layout */
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: rgb(111, 121, 240);
 }
