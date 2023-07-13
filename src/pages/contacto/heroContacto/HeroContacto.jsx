@@ -5,10 +5,10 @@ export const HeroContacto = () => {
     return(
     <div className="ContactoClass">
         <div className="TextContactoContainer">
-            <div className="SubTitleContactoContainer">Lorem ipsum dolor sit amet consectetur.</div>
+            <div className="SubTitleContactoContainer">¡Contactate con nosotras!</div>
 
             <div className="TitleContactoContainer">
-                <div className="TitleContacto">Lorem ipsum dolor sit amet consectetur.</div>
+                <div className="TitleContacto">Tus dudas serán respondidas</div>
             </div>
         </div>
     </div>
