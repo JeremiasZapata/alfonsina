@@ -1,6 +1,6 @@
 .HeroHomePage{
     height: 100vh;
-    background-color: #D9D9D9;
+    background: linear-gradient(316deg, #fd88bc 0%, #FDE5F0 97.38%);
     display: flex;
     padding-top: 69px;
     flex-direction: row;
