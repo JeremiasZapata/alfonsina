@@ -1,13 +1,25 @@
 .RoadMap{
     height: 180vh;
-    background-image:url("./img/background.png");
-    opacity: 0.5;
-    background-color: rgba(255, 156, 202, 0.5);
-    background-blend-mode: multiply;
-    padding-left: 10%;
-    padding-right: 10%;
     display: grid;
     row-gap: 0px;
+
+}
+
+.RoadMap::before{
+    content:"";
+    background-image: url("./img/background.png");
+    background-color: rgb(245, 131, 186);
+    opacity: 50%;
+    background-blend-mode: multiply;
+}
+
+.RoadMapGrid{
+    width: 100%;
+    position: absolute;
+    display: inline;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
