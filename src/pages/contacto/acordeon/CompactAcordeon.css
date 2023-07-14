@@ -1,0 +1,20 @@
+
+
+.acordeonContainer{
+    height: 100vh;
+}
+.tipografiaAcordeonPregunta{
+    color: #000000;
+font-family: Inter;
+font-style: normal;
+font-weight: bold !important;
+
+}
+
+.tipografiaAcordeonRespuesta{
+    color: #000;
+font-family: Inter;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
