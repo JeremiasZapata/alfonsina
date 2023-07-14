@@ -1,19 +1,26 @@
 .RoadMap{
     height: 180vh;
     background-image:url("./img/background.png");
-    display: flex;
+    opacity: 0.5;
+    background-color: rgba(255, 156, 202, 0.5);
+    background-blend-mode: multiply;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: grid;
+    row-gap: 0px;
 }
+
 
 .RoadMapTittleContainer{
     /* Layout */
     position: relative;
-    display: flex;
     width: 100%;
     height: 38px;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
     margin-top:8%;
+    margin-bottom:7%;
 }
 
 .RoadMapTittleText{
@@ -25,4 +32,288 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.MapaConceptualTittleContainer{
+    /* Layout */
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 34% 32% 34%;
+    width: 100%;
+    height: 141px;
+    margin-bottom: 0;
+}
+.ArrowContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    height: 100%;
+    justify-content: left;
+}
+.ArrowLeftContainer{
+    /* Layout */
+    justify-content: right;
+}
+.Arrow{
+    margin-top: 26px;
+    transform: scale(0.8);
+}
+.ArrowRight{
+    margin-left: -2px;
+    transform: scaleX(-1) scale(0.8);
+}
+
+.CoreTittleContainer{
+    /* Layout */
+    display:flex;
+    position: relative;
+    height: 100%;
+    justify-content: center;
+}
+.MapaTittleContainer{
+    /* Layou */
+    display: flex;
+    width: 393px;
+    height: 83px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    /* Style */
+    border-radius: 30px;
+    border: 5px solid #DA1972;
+
+    /* Typography */
+    color: #DA1972;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.MapaConceptualConditionalContainer{
+    /* Layout */
+    position: relative;
+    width: 100%;
+    height: 141px;
+}
+
+
+
+.MapaConceptualConditionalContainer{
+    /* Layout */
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 34% 32% 34%;
+    width: 100%;
+    height: 80px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.SpaceBetween{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.ConditionalLeftContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: right;
+    padding-right: 116px;
+}
+.ConditionalRightContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    padding-left: 115px;
+}
+.Circle{
+    /* Layout */
+    position: relative;
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+
+    /* Typography */
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+
+.MapaConceptualCloudContainer{
+    /* Layout */
+    position: relative;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 34% 32% 34%;
+    width: 100%;
+    height: 285px;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+.CloudContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: right;
+}
+.CloudContainerRight{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: left;
+}
+.Cloud{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 100%;
+    margin-right: 40px;
+}
+.CloudRight{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 235px;
+    height: 100%;
+    margin-left: 40px;
+}
+.SpaceBetween{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.FlechaContainer{
+    height: 100%;
+    position: relative;
+    display: flex;
+}
+.Flecha{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 4.8px;
+    height: 100%;
+
+    /* Style */
+    /* background-color: #de3282; */
+    background-color: #DA1972;
+}
+.FlechaPunta{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    bottom: 10px;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #DA1972;
+    border-bottom: 5px solid #DA1972;
+    transform: rotate(45deg) translate(0, 57%);
+
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    /* Style */
+    /* background-color: #de3282; */
+    background-color: inherit;
+}
+
+.NubeContainer{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    width: 235px;
+    height: 124px;
+}
+.NubeText{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 32px;
+    /* Typography */
+    color: #DA1972;
+    text-align: center;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.Nube{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    margin-top: 31px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.NubeDos{
+    /* Layout */
+    margin-top: 0px;
+    margin-left: 35px;
+}
+.NubeTres{
+    /* Layout */
+    margin-top: 40px;
+    margin-left: 51px;
+}
+.NubeCuatro{
+    /* Layout */
+    margin-top: 14px;
+    margin-left: 80px;
+}
+.NubeCinco{
+    /* Layout */
+    margin-top: 44px;
+    margin-left: 115px;
+}
+.NubeSeis{
+    /* Layout */
+    margin-top: 0px;
+    margin-left: 138px;
+}
+.NubeSiete{
+    /* Layout */
+    margin-top: 31px;
+    margin-left: 155px;
+}
+
+.MapaConceptualResultContainer{
+    /* Layout */
+    margin-top: 12px;
+    position: relative;
+    width: 100%;
+    height: 141px;
+    background-color: rgb(111, 121, 240);
 }

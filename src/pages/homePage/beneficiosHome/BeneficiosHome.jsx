@@ -16,7 +16,7 @@ export const BeneficiosHome = () =>{
             const { scrollHeight, clientHeight, scrollTop } = document.documentElement;
             const scrollProgress = scrollTop / (scrollHeight - clientHeight);
             // Define la lógica para activar la animación cuando se cumpla cierta condición de scroll.
-            if (scrollProgress >= 0.5 && !hasAnimationActivated) {
+            if (scrollProgress >= 0.2 && !hasAnimationActivated) {
                 setAnimationActive(true);
                 setHasAnimationActivated(true)
             }
