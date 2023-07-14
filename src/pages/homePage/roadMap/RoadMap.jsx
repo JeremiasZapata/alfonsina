@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./RoadMap.css"
 import LeftArrow from "./img/LeftArrow.svg"
+import { Nube } from "./Nube"
 
 // import { Scrollama, Step } from 'react-scrollama';
 
@@ -38,7 +39,7 @@ export const RoadMap = () =>{
                 <div className="MapaConceptualConditionalContainer">
                     <div className="ConditionalLeftContainer">
                         <div className="Circle">
-
+                        Sí
                         </div>
                     </div>
                     <div className="SpaceBetween">
@@ -46,14 +47,50 @@ export const RoadMap = () =>{
                     </div>
                     <div className="ConditionalRightContainer">
                         <div className="Circle">
-
+                        No
                         </div>
                     </div>
-
-
                 </div>
                 <div className="MapaConceptualCloudContainer">
+                    <div className="CloudContainer">
+                        <div className="Cloud">
+                            <div className="FlechaContainer">
+                                <div className="Flecha">
 
+                                </div>
+                                <div className="FlechaPunta">
+
+                                </div>
+                            </div>
+                            <div className="NubeContainer">
+                                <Nube/>
+                                <div className="NubeText">
+                                Te recomendamos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="SpaceBetween">
+
+                    </div>
+                    <div className="CloudContainerRight">
+                        <div className="CloudRight">
+                            <div className="FlechaContainer">
+                                <div className="Flecha">
+
+                                </div>
+                                <div className="FlechaPunta">
+
+                                </div>
+                            </div>
+                            <div className="NubeContainer">
+                                <Nube/>
+                                <div className="NubeText">
+                                Te recomendamos
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div className="MapaConceptualResultContainer">
 
