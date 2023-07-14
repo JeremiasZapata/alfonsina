@@ -82,15 +82,15 @@
 
 .animated-element.active1 {
     opacity: 1;
-    animation: move 2.5s ease-in-out 1;
+    animation: move 1s ease-in-out 1;
 }
 .animated-element.active2 {
     opacity: 1;
-    animation: move 3s ease-in-out 1;
+    animation: move 1.5s ease-in-out 1;
 }
 .animated-element.active3 {
     opacity: 1;
-    animation: move 3.5s ease-in-out 1;
+    animation: move 2s ease-in-out 1;
 }
 
 .IconBeneficioContainer{
@@ -99,7 +99,7 @@
     width: 180px;
     height: 180px;
     flex-shrink: 0;
-    background-color: #FFF;
+    background-color: #FDE5F0;
     border-radius: 50%;
     border-color: #A71351;
     border-width: 4px;
