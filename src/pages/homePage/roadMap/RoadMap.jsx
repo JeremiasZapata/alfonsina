@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./RoadMap.css"
-import LeftArrow from "./img/LeftArrow.svg"
-import { Nube } from "./Nube"
+import "./RoadMap.css";
+import { Nube } from "./Nube";
 
 // import { Scrollama, Step } from 'react-scrollama';
 
@@ -22,7 +21,7 @@ export const RoadMap = () =>{
                 <div className="MapaConceptualTittleContainer">
                     <div className="ArrowContainer ArrowLeftContainer">
                         <div className="Arrow">
-                            <img src={LeftArrow} alt="LeftArrow" />
+                            <div className="FlechaLPunta"/>
                         </div>
                     </div>
                     <div className="CoreTittleContainer">
@@ -32,7 +31,7 @@ export const RoadMap = () =>{
                     </div>
                     <div className="ArrowContainer">
                         <div className="Arrow ArrowRight">
-                            <img src={LeftArrow} alt="RightArrow" />
+                            <div className="FlechaLPuntaDer"/>
                         </div>
                     </div>
                 </div>
@@ -55,12 +54,8 @@ export const RoadMap = () =>{
                     <div className="CloudContainer">
                         <div className="Cloud">
                             <div className="FlechaContainer">
-                                <div className="Flecha">
-
-                                </div>
-                                <div className="FlechaPunta">
-
-                                </div>
+                                <div className="Flecha"/>
+                                <div className="FlechaPunta"/>
                             </div>
                             <div className="NubeContainer">
                                 <Nube/>
@@ -76,12 +71,8 @@ export const RoadMap = () =>{
                     <div className="CloudContainerRight">
                         <div className="CloudRight">
                             <div className="FlechaContainer">
-                                <div className="Flecha">
-
-                                </div>
-                                <div className="FlechaPunta">
-
-                                </div>
+                                <div className="Flecha"/>
+                                <div className="FlechaPunta"/>
                             </div>
                             <div className="NubeContainer">
                                 <Nube/>

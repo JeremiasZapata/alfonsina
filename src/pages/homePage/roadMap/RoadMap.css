@@ -68,13 +68,84 @@
     justify-content: right;
 }
 .Arrow{
-    margin-top: 26px;
-    transform: scale(0.8);
+    margin-top: 41px;
+    margin-right: 15px;
+    width: 143px;
+    height: 96px;
+    border-left: 5px solid #DA1972;
+    border-top: 5px solid #DA1972;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    display: flex;
+    justify-content: left;
+    /* transform: scale(0.8); */
+    
+
+
+}
+.FlechaLPunta{
+    /* Layout */
+    margin-left: -15px;
+    margin-bottom: -5px;
+    position: absolute;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    bottom: 10px;
+    border-left: 5px solid #DA1972;
+    border-top: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #DA1972;
+    transform: rotate(-45deg);
+
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+
+    /* Style */
+    /* background-color: #de3282; */
+    background-color: inherit;
 }
 .ArrowRight{
-    margin-left: -2px;
-    transform: scaleX(-1) scale(0.8);
+    margin-top: 41px;
+    margin-left: 15px;
+    border-left: 5px solid transparent;
+    border-top: 5px solid #DA1972;
+    border-right: 5px solid #DA1972;
+    border-bottom: 5px solid transparent;
+    display: flex;
+    justify-content: right;
+
+
+
 }
+.FlechaLPuntaDer{
+    /* Layout */
+    margin-right: -15px;
+    margin-bottom: -5px;
+    position: absolute;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    bottom: 10px;
+    border-left: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 5px solid #DA1972;
+    border-bottom: 5px solid #DA1972;
+    transform: rotate(45deg);
+
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+
+    /* Style */
+    /* background-color: #de3282; */
+    background-color: inherit;
+}
+
+
 
 .CoreTittleContainer{
     /* Layout */
@@ -123,7 +194,7 @@
     grid-template-columns: 34% 32% 34%;
     width: 100%;
     height: 80px;
-    margin-top: 12px;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 .SpaceBetween{
