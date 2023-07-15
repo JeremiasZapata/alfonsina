@@ -84,6 +84,26 @@ export const RoadMap = () =>{
                     </div>
                 </div>
                 <div className="MapaConceptualResultContainer">
+                    <div className="MapaConceptualResultTrue">
+                        <div className="ResultadoContainer">
+                        Soft Gel
+                        </div>
+                        <div className="ResultadoContainer">
+                        Nail Art - Integral Nivel 1
+                        </div>
+                        <div className="ResultadoContainer">
+                        Nail Art - Vida Silvestre
+                        </div>
+                    </div>
+                    <div className="SpaceBetween2"></div>
+                    <div className="MapaConceptualResultFalse">
+                        <div className="ResultadoContainer">
+                        Tecnicatura Inicial
+                        </div>
+                        <div className="ResultadoContainer">
+                        Semipermanente y Capping
+                        </div>
+                    </div>
 
                 </div>
             </div>

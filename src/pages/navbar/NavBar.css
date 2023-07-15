@@ -35,27 +35,28 @@
 .NavBar {
   /* Layout */
   position: absolute;
+  padding-left: 8% !important;
   height: 110px;
   display: flex !important;
   align-items: center !important;
   justify-content: center; /* Center vertically */
-  background: #DA1972 !important;
+  background: #A71351 !important;
 }
 .LinkNavBar {
   position: relative;
-  left: 60px;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Verdana';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px !important;
   line-height: 50px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #FDE5F0;
   background-color: inherit;
-  margin-right: 90px !important;
+  margin-right: 120px !important;
+
 }
 
 .Search{

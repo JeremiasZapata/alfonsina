@@ -8,8 +8,8 @@
 .RoadMap::before{
     content:"";
     background-image: url("./img/background.png");
-    background-color: rgb(245, 131, 186);
-    opacity: 50%;
+    background-color: rgb(255, 209, 230);
+    /* opacity: 50%; */
     background-blend-mode: multiply;
 }
 
@@ -78,10 +78,6 @@
     border-bottom: 5px solid transparent;
     display: flex;
     justify-content: left;
-    /* transform: scale(0.8); */
-    
-
-
 }
 .FlechaLPunta{
     /* Layout */
@@ -102,9 +98,6 @@
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
 
-
-    /* Style */
-    /* background-color: #de3282; */
     background-color: inherit;
 }
 .ArrowRight{
@@ -116,9 +109,6 @@
     border-bottom: 5px solid transparent;
     display: flex;
     justify-content: right;
-
-
-
 }
 .FlechaLPuntaDer{
     /* Layout */
@@ -138,10 +128,6 @@
     border-bottom-right-radius: 3px;
     border-top-right-radius: 5px;
     border-bottom-left-radius: 5px;
-
-
-    /* Style */
-    /* background-color: #de3282; */
     background-color: inherit;
 }
 
@@ -177,23 +163,16 @@
     line-height: normal;
 }
 
+
+
 .MapaConceptualConditionalContainer{
     /* Layout */
     position: relative;
     width: 100%;
-    height: 141px;
-}
-
-
-
-.MapaConceptualConditionalContainer{
-    /* Layout */
-    position: relative;
+    height: 80px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 34% 32% 34%;
-    width: 100%;
-    height: 80px;
     margin-top: 8px;
     margin-bottom: 0;
 }
@@ -394,9 +373,67 @@
 
 .MapaConceptualResultContainer{
     /* Layout */
-    margin-top: 12px;
     position: relative;
+    margin-top: 12px;
     width: 100%;
     height: 141px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 39.5% 21% 39.5%;
+
     background-color: rgb(111, 121, 240);
+}
+
+.SpaceBetween2{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(111, 240, 150);
+
+}
+.MapaConceptualResultTrue{
+    /* Layout */
+    position: relative;
+    display: inline;
+    justify-content: center;
+
+    background-color: rgb(111, 121, 240);
+}
+.MapaConceptualResultFalse{
+    /* Layout */
+    position: relative;
+    display: inline;
+    justify-content: center;
+    background-color: rgb(240, 111, 231);
+
+}
+
+.ResultadoContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    height: 83px;
+    margin-bottom: 30px;
+    /* Style */
+    border-radius: 30px;
+    border: 5px solid #DA1972;
+
+    /* Typography */
+    color: #DA1972;
+    text-align: center;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.ResultadoContainer:last-child{
+    margin-bottom: 0p
 }
