@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./RoadMap.css";
 import { Nube } from "./Nube";
-
-// import { Scrollama, Step } from 'react-scrollama';
-
-// MapaConceptualTittleContainer
-// MapaConceptualConditionalContainer
-// MapaConceptualCloudContainer
-// MapaConceptualResultContainer
+import { CompactRoadMap } from "./compactRoadMap/CompactRoadMap"
 
 export const RoadMap = () =>{
     return(
@@ -24,11 +18,13 @@ export const RoadMap = () =>{
                             <div className="FlechaLPunta"/>
                         </div>
                     </div>
+                    <div style={{width:'2%'}}/>
                     <div className="CoreTittleContainer">
                         <div className="MapaTittleContainer">
                         ¿Ya tenés conocimientos?
                         </div>
                     </div>
+                    <div style={{width:'2%'}}/>
                     <div className="ArrowContainer">
                         <div className="Arrow ArrowRight">
                             <div className="FlechaLPuntaDer"/>
@@ -42,7 +38,6 @@ export const RoadMap = () =>{
                         </div>
                     </div>
                     <div className="SpaceBetween">
-
                     </div>
                     <div className="ConditionalRightContainer">
                         <div className="Circle">
@@ -66,7 +61,6 @@ export const RoadMap = () =>{
                         </div>
                     </div>
                     <div className="SpaceBetween">
-
                     </div>
                     <div className="CloudContainerRight">
                         <div className="CloudRight">
@@ -104,8 +98,8 @@ export const RoadMap = () =>{
                         Semipermanente y Capping
                         </div>
                     </div>
-
                 </div>
+                <CompactRoadMap/>
             </div>
         </div>
     )

@@ -49,9 +49,8 @@
 .MapaConceptualTittleContainer{
     /* Layout */
     position: relative;
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 34% 32% 34%;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 141px;
     margin-bottom: 0;
@@ -61,6 +60,7 @@
     position: relative;
     display: flex;
     height: 100%;
+    width: 12.5%;
     justify-content: left;
 }
 .ArrowLeftContainer{
@@ -69,8 +69,7 @@
 }
 .Arrow{
     margin-top: 41px;
-    margin-right: 15px;
-    width: 143px;
+    width: 100%;
     height: 96px;
     border-left: 5px solid #DA1972;
     border-top: 5px solid #DA1972;
@@ -102,7 +101,6 @@
 }
 .ArrowRight{
     margin-top: 41px;
-    margin-left: 15px;
     border-left: 5px solid transparent;
     border-top: 5px solid #DA1972;
     border-right: 5px solid #DA1972;
@@ -135,15 +133,16 @@
 
 .CoreTittleContainer{
     /* Layout */
-    display:flex;
+    display: row;
     position: relative;
     height: 100%;
+    width: 32%;
     justify-content: center;
 }
 .MapaTittleContainer{
     /* Layou */
     display: flex;
-    width: 393px;
+    width: 100%;
     height: 83px;
     position: relative;
     justify-content: center;
@@ -172,7 +171,7 @@
     height: 80px;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 34% 32% 34%;
+    grid-template-columns: 39.5% 21% 39.5%;
     margin-top: 8px;
     margin-bottom: 0;
 }
@@ -187,14 +186,13 @@
     /* Layout */
     position: relative;
     display: flex;
-    justify-content: right;
-    padding-right: 116px;
+    justify-content: center;
 }
 .ConditionalRightContainer{
     /* Layout */
     position: relative;
     display: flex;
-    padding-left: 115px;
+    justify-content: center;
 }
 .Circle{
     /* Layout */
@@ -223,7 +221,7 @@
     position: relative;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 34% 32% 34%;
+    grid-template-columns: 39.5% 21% 39.5%;
     width: 100%;
     height: 285px;
     margin-top: 12px;
@@ -233,13 +231,13 @@
     /* Layout */
     position: relative;
     display: flex;
-    justify-content: right;
+    justify-content: center;
 }
 .CloudContainerRight{
     /* Layout */
     position: relative;
     display: flex;
-    justify-content: left;
+    justify-content: center;
 }
 .Cloud{
     /* Layout */
@@ -249,7 +247,6 @@
     align-items: center;
     width: 235px;
     height: 100%;
-    margin-right: 40px;
 }
 .CloudRight{
     /* Layout */
@@ -259,7 +256,6 @@
     align-items: center;
     width: 235px;
     height: 100%;
-    margin-left: 40px;
 }
 .SpaceBetween{
     /* Layout */
@@ -380,8 +376,6 @@
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 39.5% 21% 39.5%;
-
-    background-color: rgb(111, 121, 240);
 }
 
 .SpaceBetween2{
@@ -391,23 +385,18 @@
     width: 100%;
     height: 100%;
 
-    background-color: rgb(111, 240, 150);
-
 }
 .MapaConceptualResultTrue{
     /* Layout */
     position: relative;
     display: inline;
     justify-content: center;
-
-    background-color: rgb(111, 121, 240);
 }
 .MapaConceptualResultFalse{
     /* Layout */
     position: relative;
     display: inline;
     justify-content: center;
-    background-color: rgb(240, 111, 231);
 
 }
 
@@ -436,4 +425,158 @@
 }
 .ResultadoContainer:last-child{
     margin-bottom: 0p
+}
+@media only screen and (max-width:1250px){
+    .RoadMap{
+        height: 180vh;
+    }
+    .RoadMapGrid{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .RoadMapTittleText{
+        font-size: 28px;
+    }
+    .MapaTittleContainer{
+        font-size: 20px;
+    }
+    .ResultadoContainer{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1150px){
+    .RoadMapGrid{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .RoadMapTittleText{
+        font-size: 28px;
+    }
+    .MapaTittleContainer{
+        font-size: 20px;
+    }
+    .ResultadoContainer{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:1050px){
+    .RoadMapGrid{
+        transform: scale(0.9);
+    }
+    .MapaTittleContainer{
+        font-size: 18px;
+    }
+    .ResultadoContainer{
+        font-size: 18px;
+    }
+    .MapaConceptualResultContainer{
+        grid-template-columns: 47.5% 5% 47.5%;
+    }
+    .RoadMap{
+        height: 160vh;
+    }
+}
+
+@media only screen and (max-width:800px){
+    .RoadMap{
+        height: 155vh;
+    }
+    .CoreTittleContainer{
+        width: 40%
+    }
+    .ArrowContainer{
+        width: 6.5%;
+    }
+    .MapaConceptualCloudContainer{
+        grid-template-columns: 44% 12% 44%;
+    }
+    .MapaConceptualConditionalContainer{
+        grid-template-columns: 44% 12% 44%;
+    }
+    .MapaConceptualResultContainer{
+        grid-template-columns: 47.5% 5% 47.5%;
+    }
+}
+@media only screen and (min-width: 601px){
+    .CompactRoadMap{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .RoadMap{
+        height: 160vh;
+    }
+    .CompactRoadMap{
+        display: inline;
+    }
+    .RoadMapGrid{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .CoreTittleContainer{
+        /* Layout */
+        margin-top: 5%;
+        width: 100%;
+    }
+
+    .ResultadoContainer{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .CompactTrueFalse{
+        /* Layout */
+        margin-top: 5%;
+        margin-bottom: 2%;
+        /* Typography */
+        color: black;
+        text-align: left;
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    .Recomendamos{
+        /* Layout */
+        margin-top: 2%;
+        margin-bottom: 5%;
+        /* Typography */
+        color: rgb(77, 77, 77);
+        text-align: left;
+        font-family: Inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+
+    .ArrowContainer{
+        display: none;
+    }
+    .MapaConceptualConditionalContainer{
+        display: none;
+    }
+    .MapaConceptualCloudContainer{
+        display: none;
+    }
+    .MapaConceptualResultContainer{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .RoadMap{
+        height: 155vh;
+    }
+}
+
+@media only screen and (max-width:450px){
+    .RoadMap{
+        height: 150vh;
+    }
 }
