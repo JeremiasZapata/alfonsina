@@ -19,7 +19,7 @@ export const HeroHomePage = () =>{
 
                 </div> */}
 
-                <button className="waves-effect waves-light btn BtnContactar">
+                <button className="waves-effect waves-light btn BtnHero">
                     Contactar
                 </button>
             </div>

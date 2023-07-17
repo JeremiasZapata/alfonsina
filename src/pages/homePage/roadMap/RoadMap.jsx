@@ -1,14 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./RoadMap.css"
-import LeftArrow from "./img/LeftArrow.svg"
-import { Nube } from "./Nube"
-
-// import { Scrollama, Step } from 'react-scrollama';
-
-// MapaConceptualTittleContainer
-// MapaConceptualConditionalContainer
-// MapaConceptualCloudContainer
-// MapaConceptualResultContainer
+import "./RoadMap.css";
+import { Nube } from "./Nube";
+import { CompactRoadMap } from "./compactRoadMap/CompactRoadMap"
 
 export const RoadMap = () =>{
     return(
@@ -22,17 +15,19 @@ export const RoadMap = () =>{
                 <div className="MapaConceptualTittleContainer">
                     <div className="ArrowContainer ArrowLeftContainer">
                         <div className="Arrow">
-                            <img src={LeftArrow} alt="LeftArrow" />
+                            <div className="FlechaLPunta"/>
                         </div>
                     </div>
+                    <div style={{width:'2%'}}/>
                     <div className="CoreTittleContainer">
                         <div className="MapaTittleContainer">
                         ¿Ya tenés conocimientos?
                         </div>
                     </div>
+                    <div style={{width:'2%'}}/>
                     <div className="ArrowContainer">
                         <div className="Arrow ArrowRight">
-                            <img src={LeftArrow} alt="RightArrow" />
+                            <div className="FlechaLPuntaDer"/>
                         </div>
                     </div>
                 </div>
@@ -43,7 +38,6 @@ export const RoadMap = () =>{
                         </div>
                     </div>
                     <div className="SpaceBetween">
-
                     </div>
                     <div className="ConditionalRightContainer">
                         <div className="Circle">
@@ -55,12 +49,8 @@ export const RoadMap = () =>{
                     <div className="CloudContainer">
                         <div className="Cloud">
                             <div className="FlechaContainer">
-                                <div className="Flecha">
-
-                                </div>
-                                <div className="FlechaPunta">
-
-                                </div>
+                                <div className="Flecha"/>
+                                <div className="FlechaPunta"/>
                             </div>
                             <div className="NubeContainer">
                                 <Nube/>
@@ -71,17 +61,12 @@ export const RoadMap = () =>{
                         </div>
                     </div>
                     <div className="SpaceBetween">
-
                     </div>
                     <div className="CloudContainerRight">
                         <div className="CloudRight">
                             <div className="FlechaContainer">
-                                <div className="Flecha">
-
-                                </div>
-                                <div className="FlechaPunta">
-
-                                </div>
+                                <div className="Flecha"/>
+                                <div className="FlechaPunta"/>
                             </div>
                             <div className="NubeContainer">
                                 <Nube/>
@@ -93,8 +78,28 @@ export const RoadMap = () =>{
                     </div>
                 </div>
                 <div className="MapaConceptualResultContainer">
-
+                    <div className="MapaConceptualResultTrue">
+                        <div className="ResultadoContainer">
+                        Soft Gel
+                        </div>
+                        <div className="ResultadoContainer">
+                        Nail Art - Integral Nivel 1
+                        </div>
+                        <div className="ResultadoContainer">
+                        Nail Art - Vida Silvestre
+                        </div>
+                    </div>
+                    <div className="SpaceBetween2"></div>
+                    <div className="MapaConceptualResultFalse">
+                        <div className="ResultadoContainer">
+                        Tecnicatura Inicial
+                        </div>
+                        <div className="ResultadoContainer">
+                        Semipermanente y Capping
+                        </div>
+                    </div>
                 </div>
+                <CompactRoadMap/>
             </div>
         </div>
     )

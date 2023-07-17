@@ -1,8 +1,10 @@
 .HeroHomePage{
-    height: 100vh;
-    background: linear-gradient(316deg, #fd88bc 0%, #FDE5F0 97.38%);
+    height: 75vh;
+    /* background: linear-gradient(316deg, #fd88bc 0%, #FDE5F0 97.38%); */
+    background-image: url("../roadMap/img/background.png");
+    background-color: rgb(255, 209, 230);
     display: flex;
-    padding-top: 69px;
+    padding-top: 5%;
     flex-direction: row;
 }
 
@@ -12,18 +14,20 @@
     margin-left: 10%;
     align-items: center;
     display: column;
-    width: 42%;
-    height: 90%;
+    width: 48%;
+    height: 80%;
 }
 
 .HeroHomeSubTitleContainer{
     /* Layout */
-    margin-top: 28%;
+    position: relative;
+    margin-top: 15%;
     display: flex;
-    width: 60.3%;
+    width: 90%;
     height: 5%;
     /* justify-content: center; */
     align-items: center;
+    justify-content: center;
     flex-shrink: 0;
 }
 
@@ -44,33 +48,32 @@
 .HeroHomeTitleContainer{
     /* Layout */
     position: relative;
-    height: 24%;
+    margin-top: 10px;
+    height: 35%;
     width: 100%;
-    margin-top: 3.35%;
 }
 
 .HeroHomeTitleText{
-    width: 85%;
+    width: 96%;
 
     color: #000;
-    font-size: 38px;
+    font-size: 50px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 800;
     line-height: normal;
 }
 
-.BtnContactar{
+.BtnHero{
     /* Layout */
-    margin-top: auto !important;
-    width: 111px !important;
+    margin-top: 10% !important;
+    width: 120px !important;
     height: 44px !important;
     /* flex-direction: column; */
     justify-content: center !important;
     flex-shrink: 0 !important;
-    border-radius: 16px !important;
-    background: #771135 !important;
-    top: 16%;
+    border-radius: 10px !important;
+    background: #A71351 !important;
 
     /* Typography */
     color: #FFF !important;
@@ -83,11 +86,11 @@
 
 .RightHeroContainer{
     /* Layout */
-    width: 38%;
-    height: 90%;
+    width: 32%;
+    height: 80%;
     display: flex;
     flex-shrink: 0;
-    border-radius: 55px;
+    border-radius: 10px;
     background-image: url("./img/imgHeroHomePage.png");
     background-size: cover;
     background-position: center;
@@ -101,10 +104,15 @@
 
     .HeroHomeTitleText{
         /* Typography */
-        font-size: 32px;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
     }
 
-    .BtnContactar{
+    .BtnHero{
         transform: scale(0.9)
     }
     .RightHeroContainer{
@@ -174,8 +182,8 @@
     .HeroHomeTitleText{
         font-size: 30px;
     }
-    .BtnContactar{
-        top: 50%
+    .BtnHero{
+        top: 30%
     }
 
     .RightHeroContainer {
@@ -226,7 +234,7 @@
     .HeroHomeTitleText{
         font-size: 16px;
     }
-    .BtnContactar{
+    .BtnHero{
         transform: scale(0.8)
     }
 }
