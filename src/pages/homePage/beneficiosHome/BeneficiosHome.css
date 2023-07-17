@@ -1,6 +1,6 @@
 .BeneficiosHome{
     /* Layout */
-    height: 100vh;
+    height: 80vh;
     background-color:#F1EBEE;
     display: flex;
     justify-content: center;
@@ -10,7 +10,7 @@
 .BeneficiosHomeContainer{
     display: inline;
     justify-content: center;
-    margin-top: 157px;
+    margin-top: 5%;
 }
 
 .BeneficiosHomeTittleContainer{
@@ -221,9 +221,35 @@
         width: 100%;
     }
     .BeneficiosHomeTittle{
-        transform: scale(.70)
+        transform: scale(.80)
     }
     .BeneficiosHomeTittleContainer{
         width: 100%;
+    }
+}
+
+@media only screen and (max-height: 500px){
+    .BeneficiosHomeContainer{
+        margin-top: 0px;
+        transform: scale(0.7)
+    }
+    .BeneficiosHome{
+        height: 100vh;
+    }
+    .BeneficioBox:last-child {
+        display: flex;
+    }
+    .BeneficiosContainer2{
+        display: none;
+    }
+}
+@media only screen and (max-height: 400px){
+    .BeneficiosHome{
+        height: 120vh;
+    }
+}
+@media only screen and (max-height: 300px){
+    .BeneficiosHome{
+        height: 140vh;
     }
 }

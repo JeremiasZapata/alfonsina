@@ -185,3 +185,12 @@
     width: 60%;
   }
 }
+
+@media only screen and (max-height: 400px){
+  .NavBarBrand {
+    display: none;
+  }
+  .NavBarBrandWrapper{
+    display: none;
+  }
+}
