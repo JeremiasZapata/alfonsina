@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #FDE5F0;
 }
 
 .NavBarBrand {
@@ -34,27 +35,28 @@
 .NavBar {
   /* Layout */
   position: absolute;
+  padding-left: 8% !important;
   height: 110px;
   display: flex !important;
   align-items: center !important;
   justify-content: center; /* Center vertically */
-  background: #DA1972 !important;
+  background: #A71351 !important;
 }
 .LinkNavBar {
   position: relative;
-  left: 60px;
   text-decoration: none;
-  font-family: 'Roboto';
+  font-family: 'Verdana';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 16px !important;
-  line-height: 50px;
+  line-height: 60px;
   display: flex;
   align-items: center;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #FDE5F0;
   background-color: inherit;
-  margin-right: 90px !important;
+  margin-right: 120px !important;
+
 }
 
 .Search{
@@ -82,7 +84,8 @@
     padding-left: 15px;
   }
   .LinkNavBar {
-    transform: scale(0.95)
+    transform: scale(0.95);
+    margin-right: 100px !important;
   }
 }
 
@@ -92,10 +95,10 @@
     height: 80px;
   }
 
-  /* .NavBarBrand {
-    Layout
-    height: 80px;
-  } */
+  .LinkNavBar {
+    font-size: 14px !important;
+    margin-right: 80px !important;
+  }
 
   .NavBar {
     /* Layout */
@@ -116,6 +119,9 @@
     /* Layout */
     height: 100%;
     width: 25%;
+  }
+  .LinkNavBar {
+    font-size: 14px !important;
   }
 }
 
@@ -177,5 +183,14 @@
     /* Layout */
     height: 100%;
     width: 60%;
+  }
+}
+
+@media only screen and (max-height: 400px){
+  .NavBarBrand {
+    display: none;
+  }
+  .NavBarBrandWrapper{
+    display: none;
   }
 }
