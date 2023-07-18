@@ -105,11 +105,11 @@ const Footer = () => {
           </div>
 
         </div>
-        <div className="whatsapp-logo">
+        {/* <div className="whatsapp-logo">
   <a href="https://api.whatsapp.com/send?phone=1156632971" target="_blank" rel="noopener noreferrer">
     <img src={require('./imagenes/whatsapp.png')} alt="WhatsApp Logo" />
   </a>
-</div>
+</div> */}
       </div>
     </div>
   )
