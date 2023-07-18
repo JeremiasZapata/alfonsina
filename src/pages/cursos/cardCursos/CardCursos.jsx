@@ -1,14 +1,41 @@
-import React from "react";
-import "./CardCursos.css"
+import * as React from 'react';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import './CardCursos.css'
 
-import { CardLeftSide } from "./cardLeftSideComponents/CardLeftSide"
-import { CardRightSide } from "./cardRightSideComponents/CardRightSide"
+
 
 export const CardCursos = ({curso}) => {
-    return(
-        <div className="CardCursosClass">
-            <CardLeftSide curso={curso}/>
-            <CardRightSide curso={curso}/>
+
+    const imgFolder = require.context('../../assets/fotosCursos', false, /\.(png|jpe?g|svg)$/)
+    const defaultFoto = "defaultFoto.png"
+    const img_node = imgFolder(`./${curso.foto?curso.foto:defaultFoto}`);
+    
+    return (
+        <div className='CardContainer'>
+            <Card className='Card'>
+                <CardMedia className='CardPhotoContainer'
+                    component="img"
+                    alt="green iguana"
+                    image={img_node}
+                    // source={'../../../Data/tecnicaturaInicialFoto.png'}
+                />
+                <CardContent className='CardTittleContainer'>
+                    <Typography gutterBottom variant="h5" component="div">
+                    {curso.nombre}
+                    </Typography>
+                    <Typography variant="body2" color="text.secondary">
+                    
+                    </Typography>
+                </CardContent>
+                <CardActions className='CardButtonContainer'>
+                    <Button className='waves-effect waves-light btn CardButton' size="small">Ver más</Button>
+                </CardActions>
+            </Card>
         </div>
     );
 }

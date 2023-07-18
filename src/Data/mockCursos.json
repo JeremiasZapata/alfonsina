@@ -3,7 +3,7 @@
 		"nombre": "Tecnicatura inicial",
 		"modalidad": "Presencial",
 		"incluyeCertificao": true,
-		"foto": "",
+		"foto": "tecnicaturaInicialFoto.png",
 		"duracion": "5 meses",
 		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
 		"frecuencia": {
@@ -31,10 +31,10 @@
 		}
 	},
     {
-		"nombre": "Tecnicatura inicial 2",
+		"nombre": "Semipermanente y Capping",
 		"modalidad": "Presencial",
 		"incluyeCertificao": true,
-		"foto": "",
+		"foto": "SemipermanenteyCapping.png",
 		"duracion": "5 meses",
 		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
 		"frecuencia": {

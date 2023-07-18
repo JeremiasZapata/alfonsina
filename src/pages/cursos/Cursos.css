@@ -5,8 +5,9 @@
 
 .containerDivCursos{
     padding-top: 50px;
+    padding-left: 10%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: left;
     align-items: center;
 }

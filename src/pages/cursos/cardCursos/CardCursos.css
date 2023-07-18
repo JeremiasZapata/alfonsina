@@ -1,13 +1,51 @@
-.CardCursosClass {
+.CardContainer{
+    margin-right: 5%;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.20);
+    margin-bottom: 5%;
+}
+
+.Card{
+    width: 299px;
+    height: 400px;
+}
+
+.CardPhotoContainer{
+    height: 44%;
+}
+
+.CardTittleContainer{
+    height: 40%;
+}
+
+.CardButtonContainer{
+    padding-right: 5%;
+    height: 16%;
+    align-items: center;
+    justify-content: right;
+}
+
+.CardButton{
     /* Layout */
-    width: 1210px;
-    height: 636px;
-    flex-shrink: 0;
-    background: #F9F9F9;
     display: flex;
-    margin-bottom: 60px;
+    width: 130px;
+    height: 42px;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    flex-shrink: 0;
 
     /* Style */
-    border-radius: 20px;
-    box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.10);
+    border-radius: 16px;
+    background: var(--secundario, #8D1539);
+
+    /* Typography */
+    color: #FDE5F0;
+    text-align: center;
+    font-family: Inter !important;
+    font-size: 15px !important;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: none !important;
 }
