@@ -1,12 +1,187 @@
 .containerCursos {
     display: flex;
     flex-direction: column;
+    background-color: #FDE5F0;
 }
 
 .containerDivCursos{
-    padding-top: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 3%;
+}
+
+.NivelText{
+    /* Layout */
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+
+    /* Typography */
+    color: #320817;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.PreBanner{
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    background-color: #DA1972;
+    height: 466px;
+}
+.LeftPreBanner{
+    /* Layout */
+    position: relative;
+    display: inline;
+    width: 50%;
+    height: 100%;
+    padding-left: 10%;
+}
+
+
+.BannerTittleContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 15%;
+
+    /* Typography */
+    color: #FDE5F0;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.BannerButtonContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 10%;
+}
+
+.BannerButton{
+    /* Layout */
+    display: flex !important;
+    width: 130px !important;
+    height: 42px !important;
+    padding: 18px 30px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    flex-shrink: 0 !important;
+
+    /* Style */
+    border-radius: 16px !important;
+    background: var(--secundario, #DA1972) !important;
+
+    /* Typography */
+    color: #FDE5F0 !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    text-transform: none !important;
+}
+
+.BannerFotoContainer{
+    /* Layout */
+    margin-left: 5%;
+    position: relative;
+    display: flex;
+    width: 490px;
+    height: 440px;
+
+    /* Style */
+    background-image: url("../assets/BannerCursos.png");
+    background-size: contain;
+    background-position: top;
+    border-radius: 100%;
+    /* border-top-left-radius: 60%;
+    border-top-right-radius: 60%; */
+
+}
+
+.RightPreBanner{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.BannerBottom{
+    /* Layout */
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 28%;
+    bottom:0;
+
+    background-color: #FDE5F0;
+}
+
+@media only screen and (max-width: 1000px){
+    .BannerBottom{
+        height: 35%;
+    }
+}
+
+@media only screen and (max-width: 910px){
+    .NivelText{
+        font-size: 25px;
+    }
+    .LeftPreBanner{
+        /* Layout */
+        padding-left: 6%;
+    }
+    .BannerTittleContainer{
+        font-size: 26px;
+    }
+    .BannerFotoContainer{
+        width: 460px;
+        height: 410px;
+    }
+    .BannerBottom{
+        height: 35%;
+    }
+}
+
+@media only screen and (max-width: 780px){
+    .LeftPreBanner{
+        width: 80%;
+    }
+    .RightPreBanner{
+        display: none;
+    }
+    .BannerTittleContainer{
+        margin-top:10%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+    .containerDivCursos{
+        padding-left: 3%;
+        align-items: center;
+    }
+    .LeftPreBanner{
+        width: 100%;
+    }
+    .RightPreBanner{
+        display: none;
+    }
+    .BannerTittleContainer{
+        margin-top:10%;
+    }
 }

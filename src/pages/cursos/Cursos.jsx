@@ -2,8 +2,11 @@ import React, { useEffect, useState, useRef } from "react";
 import { HeroCursos } from "./heroCursos/HeroCursos"
 import { CardCursos } from "./cardCursos/CardCursos"
 import "./Cursos.css";
-
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
+import Button from '@mui/material/Button';
 import MOCK_DATA from '../../Data/mockCursos.json'
+import BannerFotoCurso from '../assets/BannerCursos.png'
 
 export const pedirDatos = (bool) => {
     return new Promise((resolve, reject) => {
@@ -47,12 +50,61 @@ export const Cursos = () => {
     return(
         <div className="containerCursos">
             <HeroCursos handleScrollTo={handleScrollTo}/>
-            <div ref={cursosRef} className="containerDivCursos">
+            <div className="NivelText">
+            Nivel Inicial
+            </div>
+            <Box sx={{ flexGrow: 1 }} className="containerDivCursos">
+                <Grid
+                container
+                spacing={2}
+                direction="row"
+                justifyContent="left"
+                alignItems="center"
+                >
                 {
                     datosCursos.map((curso) => (
-                        <CardCursos curso={curso} key={curso.nombre}/>
+                        <Grid key={curso.nombre}>
+                            <CardCursos curso={curso} key={curso.nombre}/>
+                        </Grid>
                     ))
                 }
+                </Grid>
+            </Box>
+            <div className="NivelText">
+            Nivel Profesional
+            </div>
+            <Box sx={{ flexGrow: 1 }} className="containerDivCursos">
+                <Grid
+                container
+                spacing={2}
+                direction="row"
+                justifyContent="left"
+                alignItems="center"
+                >
+                {
+                    datosCursos.map((curso) => (
+                        <Grid key={curso.nombre}>
+                            <CardCursos curso={curso} key={curso.nombre}/>
+                        </Grid>
+                    ))
+                }
+                </Grid>
+            </Box>
+            <div className="PreBanner">
+                <div className="LeftPreBanner">
+                    <div className="BannerTittleContainer">
+                    Preguntá por nuestros cursos y seminarios.
+                    </div>
+                    <div className="BannerButtonContainer">
+                        <Button className='waves-effect waves-light btn BannerButton' size="small">Consultar</Button>
+                    </div>
+                </div>
+                <div className="RightPreBanner">
+                    <div className="BannerFotoContainer">
+                        {/* <img src={BannerFotoCurso} alt="imagenBanner"/> */}
+                    </div>
+                </div>
+                <div className="BannerBottom"/>
             </div>
         </div>
     );
