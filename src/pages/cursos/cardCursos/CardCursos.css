@@ -14,7 +14,29 @@
 }
 
 .CardTittleContainer{
-    height: 40%;
+    height: 40% !important;
+    background-color: #FDE5F0 !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.CardTittle{
+    /* Layout */
+    margin-top: 10%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+
+    /* Typography */
+    color: var(--grey-black, #0A0A0A) !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 24px !important;
+    font-style: normal !important;
+    font-weight: 800 !important;
+    line-height: 150% !important; /* 48px */
+    letter-spacing: 0.6px !important;
 }
 
 .CardButtonContainer{
@@ -22,30 +44,31 @@
     height: 16%;
     align-items: center;
     justify-content: right;
+    background-color: #FDE5F0;
 }
 
 .CardButton{
     /* Layout */
-    display: flex;
-    width: 130px;
-    height: 42px;
-    padding: 18px 30px;
-    justify-content: center;
-    align-items: center;
-    gap: 18px;
-    flex-shrink: 0;
+    display: flex !important;
+    width: 130px !important;
+    height: 42px !important;
+    padding: 18px 30px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    flex-shrink: 0 !important;
 
     /* Style */
-    border-radius: 16px;
-    background: var(--secundario, #8D1539);
+    border-radius: 16px !important;
+    background: var(--secundario, #8D1539) !important;
 
     /* Typography */
-    color: #FDE5F0;
-    text-align: center;
+    color: #FDE5F0 !important;
+    text-align: center !important;
     font-family: Inter !important;
     font-size: 15px !important;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
     text-transform: none !important;
 }

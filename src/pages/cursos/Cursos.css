@@ -1,13 +1,15 @@
 .containerCursos {
     display: flex;
     flex-direction: column;
+    background-color: #FDE5F0;
 }
 
 .containerDivCursos{
     padding-top: 50px;
     padding-left: 10%;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas ajustables */
+    grid-auto-rows: auto; /* Filas ajustadas al contenido */
     justify-content: left;
     align-items: center;
 }
