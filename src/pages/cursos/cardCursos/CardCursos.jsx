@@ -25,12 +25,9 @@ export const CardCursos = ({curso}) => {
                     // source={'../../../Data/tecnicaturaInicialFoto.png'}
                 />
                 <CardContent className='CardTittleContainer'>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <div className='CardTittle'>
                     {curso.nombre}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                    
-                    </Typography>
+                    </div>
                 </CardContent>
                 <CardActions className='CardButtonContainer'>
                     <Button className='waves-effect waves-light btn CardButton' size="small">Ver más</Button>
