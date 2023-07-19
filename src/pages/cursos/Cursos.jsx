@@ -2,6 +2,8 @@ import React, { useEffect, useState, useRef } from "react";
 import { HeroCursos } from "./heroCursos/HeroCursos"
 import { CardCursos } from "./cardCursos/CardCursos"
 import "./Cursos.css";
+import Box from '@mui/material/Box';
+import Grid from '@mui/material/Unstable_Grid2';
 
 import MOCK_DATA from '../../Data/mockCursos.json'
 
@@ -47,13 +49,46 @@ export const Cursos = () => {
     return(
         <div className="containerCursos">
             <HeroCursos handleScrollTo={handleScrollTo}/>
-            <div ref={cursosRef} className="containerDivCursos">
+            <div className="NivelText">
+            Nivel Inicial
+            </div>
+            <Box sx={{ flexGrow: 1 }} className="containerDivCursos">
+                <Grid
+                container
+                spacing={2}
+                direction="row"
+                justifyContent="left"
+                alignItems="center"
+                >
                 {
                     datosCursos.map((curso) => (
-                        <CardCursos curso={curso} key={curso.nombre}/>
+                        <Grid key={curso.nombre}>
+                            <CardCursos curso={curso} key={curso.nombre}/>
+                        </Grid>
                     ))
                 }
+                </Grid>
+            </Box>
+            <div className="NivelText">
+            Nivel Profesional
             </div>
+            <Box sx={{ flexGrow: 1 }} className="containerDivCursos">
+                <Grid
+                container
+                spacing={2}
+                direction="row"
+                justifyContent="left"
+                alignItems="center"
+                >
+                {
+                    datosCursos.map((curso) => (
+                        <Grid key={curso.nombre}>
+                            <CardCursos curso={curso} key={curso.nombre}/>
+                        </Grid>
+                    ))
+                }
+                </Grid>
+            </Box>          
         </div>
     );
 }

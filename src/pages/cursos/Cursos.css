@@ -5,11 +5,23 @@
 }
 
 .containerDivCursos{
-    padding-top: 50px;
     padding-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas ajustables */
-    grid-auto-rows: auto; /* Filas ajustadas al contenido */
-    justify-content: left;
-    align-items: center;
+    padding-right: 10%;
+    margin-bottom: 3%;
+}
+
+.NivelText{
+    /* Layout */
+    margin-left: 10%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+
+    /* Typography */
+    color: #320817;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
