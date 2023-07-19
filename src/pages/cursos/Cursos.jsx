@@ -4,8 +4,9 @@ import { CardCursos } from "./cardCursos/CardCursos"
 import "./Cursos.css";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
-
+import Button from '@mui/material/Button';
 import MOCK_DATA from '../../Data/mockCursos.json'
+import BannerFotoCurso from '../assets/BannerCursos.png'
 
 export const pedirDatos = (bool) => {
     return new Promise((resolve, reject) => {
@@ -88,7 +89,28 @@ export const Cursos = () => {
                     ))
                 }
                 </Grid>
-            </Box>          
+            </Box>
+            <div className="BottomBannerContainer">
+                <div className="LeftBannerSide">
+                    <div className="BannerTittleContainer">
+                    Preguntá por nuestros cursos y seminarios.
+                    </div>
+                    <div className="BannerButtonContainer">
+                        <Button className='waves-effect waves-light btn BannerButton' size="small">Consultar</Button>
+                    </div>
+                </div>
+                <div className="RightBannerSide">
+                <div className="domo">
+                <div className="parte-inferior2"></div>
+                <div className="parte-inferior"></div>
+      {/* <div className="parte-inferior3"></div> */}
+    </div>
+                    {/* <div className="BannerFotoContainer">
+                        <img src={BannerFotoCurso} alt="imagenBanner"/>
+                    </div> */}
+
+                </div>
+            </div>          
         </div>
     );
 }

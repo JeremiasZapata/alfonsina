@@ -25,3 +25,135 @@
     font-weight: 700;
     line-height: normal;
 }
+
+.BottomBannerContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 416px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    
+    /* Style */
+    background-color: #DA1972;
+
+}
+
+.LeftBannerSide{
+    /* Layout */
+    position: relative;
+    display: inline;
+    width: 50%;
+    height: 100%;
+    padding-left: 10%;
+}
+
+.BannerTittleContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 30%;
+
+    /* Typography */
+    color: #FDE5F0;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.BannerButtonContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 20%;
+    margin-top: 10%;
+}
+
+.BannerButton{
+    /* Layout */
+    display: flex !important;
+    width: 130px !important;
+    height: 42px !important;
+    padding: 18px 30px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 18px !important;
+    flex-shrink: 0 !important;
+
+    /* Style */
+    border-radius: 16px !important;
+    background: var(--secundario, #DA1972) !important;
+
+    /* Typography */
+    color: #FDE5F0 !important;
+    text-align: center !important;
+    font-family: Inter !important;
+    font-size: 15px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    line-height: normal !important;
+    text-transform: none !important;
+}
+
+.RightBannerSide{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 50%;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.BannerFotoContainer{
+    /* Layout */
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 92%;
+
+    /* Style */
+    background-image: url("../assets/BannerCursos.png");
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    border-radius: 3em/10em;
+    /* border-top-left-radius: 60%;
+    border-top-right-radius: 60%; */
+
+}
+
+.domo {
+    width: 70%;
+    height: 90%;
+    background-image: url("../assets/BannerCursos.png");
+    background-size:contain;
+    background-position: center;
+    border-radius: 75% / 100% 100% 0% 0;
+    
+    position: relative;
+}
+
+.parte-inferior {
+    width: 100%;
+    height: 30%;
+    background-color: #3498db;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10% / 0 0 100% 100%;
+  }
+  
+  .parte-inferior2 {
+    width: 100%;
+    height: 30%;
+    background-color: #DA1972;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
