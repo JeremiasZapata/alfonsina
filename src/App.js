@@ -9,6 +9,7 @@ import { NavBar } from './pages/navbar/NavBar';
 import { HomePage } from './pages/homePage/HomePage';
 import { Contacto } from './pages/contacto/Contacto';
 import { Cursos } from './pages/cursos/Cursos'
+import { CursoDetail } from './pages/cursos/cursoDetail/CursoDetail'
 import { SobreNosotras } from './pages/sobreNosotras/SobreNosotras';
 
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<HomePage />}/>
           <Route path="/contacto" element={<Contacto/>}/>
           <Route path="/cursos" element={<Cursos/>}/>
+          <Route path="/cursos/:cursoId" element={<CursoDetail/>}/>
           <Route path="/nosotras" element={<SobreNosotras/>}/>
           <Route path="*" element={<HomePage />}/>
         </Routes>
