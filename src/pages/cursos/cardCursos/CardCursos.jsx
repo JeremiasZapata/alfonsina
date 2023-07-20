@@ -4,7 +4,7 @@ import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { Link } from 'react-router-dom'
 import './CardCursos.css'
 
 
@@ -22,7 +22,7 @@ export const CardCursos = ({curso}) => {
                     component="img"
                     alt="green iguana"
                     image={img_node}
-                    // source={'../../../Data/tecnicaturaInicialFoto.png'}
+                    style={{objectFit:'cover', objectPosition:'center'}}
                 />
                 <CardContent className='CardTittleContainer'>
                     <div className='CardTittle'>
@@ -30,7 +30,13 @@ export const CardCursos = ({curso}) => {
                     </div>
                 </CardContent>
                 <CardActions className='CardButtonContainer'>
-                    <Button className='waves-effect waves-light btn CardButton' size="small">Ver más</Button>
+                    <Button className='waves-effect waves-light btn CardButton' size="small">
+                        <Link 
+                            to={`/cursos/${curso.id}`} 
+                            style={{color: 'inherit', backgroundColor:'inherit', textDecoration:'inherit'}}>
+                            Ver más
+                        </Link>
+                    </Button>
                 </CardActions>
             </Card>
         </div>

@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 
     background: #D9D9D9;
 }
@@ -85,4 +85,28 @@
     font-family: 'Roboto' !important;
     font-weight: 700px !important;
     text-transform: capitalize !important;
+}
+
+@media only screen and (max-width: 500px){
+    .CursosSubTituloClass{
+        font-size: 20px;
+    }
+    .CursosTituloClass{
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .HeroCursosContainer{
+        height: 250px;
+    }
+    .CursosSubTituloClass{
+        width: 250px;
+        width: 100%;
+        font-size: 16px;
+    }
+    .CursosTituloClass{
+        width: 250px;
+        font-size: 25px;
+    }
 }

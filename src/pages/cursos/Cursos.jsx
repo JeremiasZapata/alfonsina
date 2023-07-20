@@ -90,8 +90,8 @@ export const Cursos = () => {
                 }
                 </Grid>
             </Box>
-            <div className="BottomBannerContainer">
-                <div className="LeftBannerSide">
+            <div className="PreBanner">
+                <div className="LeftPreBanner">
                     <div className="BannerTittleContainer">
                     Preguntá por nuestros cursos y seminarios.
                     </div>
@@ -99,18 +99,13 @@ export const Cursos = () => {
                         <Button className='waves-effect waves-light btn BannerButton' size="small">Consultar</Button>
                     </div>
                 </div>
-                <div className="RightBannerSide">
-                <div className="domo">
-                <div className="parte-inferior2"></div>
-                <div className="parte-inferior"></div>
-      {/* <div className="parte-inferior3"></div> */}
-    </div>
-                    {/* <div className="BannerFotoContainer">
-                        <img src={BannerFotoCurso} alt="imagenBanner"/>
-                    </div> */}
-
+                <div className="RightPreBanner">
+                    <div className="BannerFotoContainer">
+                        {/* <img src={BannerFotoCurso} alt="imagenBanner"/> */}
+                    </div>
                 </div>
-            </div>          
+                <div className="BannerBottom"/>
+            </div>
         </div>
     );
 }
