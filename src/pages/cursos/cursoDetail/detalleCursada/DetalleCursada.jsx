@@ -1,8 +1,8 @@
 import React from "react";
 import "./DetalleCursada.css"
-import icoLocation from "../../../../../Icons/location.svg"
-import icoCalendar from "../../../../../Icons/calendar.svg"
-import icoClock from "../../../../../Icons/clock.svg"
+import icoLocation from "../../../../Icons/location.svg"
+import icoCalendar from "../../../../Icons/calendar.svg"
+import icoClock from "../../../../Icons/clock.svg"
 
 
 export const DetalleCursada = ({curso}) => {

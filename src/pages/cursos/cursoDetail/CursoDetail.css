@@ -1,0 +1,107 @@
+.CursoContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    height: auto;
+    width: 100%;
+}
+.NivelCursoContainer{
+    /* Layout */
+    width: 100%;
+    position: relative;
+    display: row;
+    align-items: left;
+    margin-left: 10%;
+
+    /* Typography */
+    color: #320817;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.NombreCursoContainer{
+    /* Layout */
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: left;
+    margin-top: 3%;
+    margin-left: 10%;
+
+    /* Typography */
+    color: #320817;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.LineaDivisoria{
+    /* Layout */
+    height: 1px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+
+    /* Style */
+    background: #000000;
+}
+.CursoDetalle{
+    /* Layout */
+    position: relative;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 576px;
+}
+.LeftCursoDetalle{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: red;
+
+}
+.TittleContainer{
+    /* Typography */
+    color: #320817;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 100% */
+}
+.InfoText{
+    /* Layout */
+    margin-top: 3%;
+    margin-left: 2%;
+    /* Typography */
+    color: #320817;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.lista{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0;
+}
+
+.RightCursoDetalle{
+    position: relative;
+    display: flex;
+    width: 40%;
+}
