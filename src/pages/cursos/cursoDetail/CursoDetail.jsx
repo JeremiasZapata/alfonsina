@@ -1,11 +1,13 @@
 import { useState, useEffect} from 'react';
 import { useParams } from 'react-router-dom';
 import MOCK_DATA from '../../../Data/mockCursos.json';
+import Button from '@mui/material/Button';
 
 import './CursoDetail.css';
 
 import { DetalleCursada } from './detalleCursada/DetalleCursada';
 import { TemarioCurso } from './temarioCurso/TemarioCurso'
+import { AvisoCurso } from './avisoCurso/AvisoCuros'
 
 export const pedirDatos = (bool) => {
     return new Promise((resolve, reject) => {
@@ -63,13 +65,15 @@ export const CursoDetail = () => {
                         </div>
                         <div className="SobreKitContainer">
                             <div className="SobreKitText">Kit de uñas</div>
-                            <div className="AvisoContainer">En nuestra academia no prestamos ningún kit, sino que alentamos a los estudiantes para que compren uno propio. Nuestro objetivo es alentar que sigan sus prácticas fuera de la clase.</div>
+                            <AvisoCurso/>
                         </div>
                     </div>
                     <div className="RightCursoDetalle">
-                        <img src={img_node} alt="foto curso" style={{objectFit:'cover', objectPosition:'center'}}></img>
+                        <img className="RightCursoDetalleFoto" src={img_node} alt="foto curso" style={{objectFit:'cover', objectPosition:'center'}}></img>
                     </div>
                 </div>
+                    <Button className='waves-effect waves-dark btn ButtonConsultarPrecio' size="small">Consultar precio</Button>
+                    <Button className='waves-effect waves-light btn ButtonConsultarPrecio ButtonInscribirme' size="small">Inscribirme</Button>
             </div>
         )
     }

@@ -1,0 +1,32 @@
+.AvisoContainer{
+    /* Layout */
+    position: relative;
+    width: 82%;
+    margin-top: 3%;
+
+    /* Typography */
+    color: var(--acento, #000000);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+}
+
+.ColorPalabra{
+    color: var(--acento, #DA1972);
+}
+
+@media only screen and (max-width: 700px){
+    .AvisoContainer{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .AvisoContainer{
+        font-size: 14px;
+        width: 95%;
+    }
+}
