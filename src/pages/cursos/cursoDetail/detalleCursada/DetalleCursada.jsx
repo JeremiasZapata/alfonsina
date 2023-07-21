@@ -8,35 +8,35 @@ import icoClock from "../../../../Icons/clock.svg"
 export const DetalleCursada = ({curso}) => {
     return(
         <div className="DetalleCursadaContainer">
-            <div className="Ico">
-                <img alt="icoLocation" src={icoLocation} />
-            </div>
-            <div className="DetalleModalidadContainer">
-                <div className="DetalleModalidadTitulo">
-                    Modalidad:
+            <div className="DetalleContainer">
+                <div className="Ico">
+                    <img alt="icoLocation" src={icoLocation} />
                 </div>
-                <div className="DetalleModalidad">{curso.modalidad}</div>
-            </div>
-            <div className="IcoCalendar">
-                <img alt="icoCalendar" src={icoCalendar} />
-            </div>
-            <div className="DetalleDuracionContainer">
-                <div className="DetalleDuracionTitulo">
-                    Duración:
+                <div className="DetalleTitulo">
+                Modalidad:
                 </div>
-                <div className="DetalleDuracion">{curso.duracion}</div>
+                <div className="Detalle">{curso.modalidad}</div>
             </div>
-            <div className="IcoClock">
-                <img alt="icoClock" src={icoClock} />
+            <div className="DetalleContainer">
+                <div className="Ico">
+                    <img alt="icoCalendar" src={icoCalendar} />
+                </div>
+                <div className="DetalleTitulo">
+                Duración:
+                </div>
+                <div className="Detalle">{curso.duracion}</div>
             </div>
-            <div className="DetalleFrecuenciaContainer">
-                <div className="DetalleFrecuenciaTitulo">
-                    Frecuencia:
+            <div className="DetalleContainer">
+                <div className="Ico">
+                    <img alt="icoClock" src={icoClock} />
+                </div>
+                <div className="DetalleTitulo">
+                Frecuencia:
                 </div>
                 {
                     curso.frecuencia.clasesSemanal === 1
-                    ?<div className="DetalleFrecuencia">{curso.frecuencia.clasesSemanal} clase semanal de {curso.frecuencia.duracionHoras}hs</div>
-                    :<div className="DetalleFrecuencia">{curso.frecuencia.clasesSemanal} clases semanales de {curso.frecuencia.duracionHoras}hs</div>
+                    ?<div className="Detalle">{curso.frecuencia.clasesSemanal} clase semanal de {curso.frecuencia.duracionHoras}hs</div>
+                    :<div className="Detalle">{curso.frecuencia.clasesSemanal} clases semanales de {curso.frecuencia.duracionHoras}hs</div>
                 }
             </div>
         </div>

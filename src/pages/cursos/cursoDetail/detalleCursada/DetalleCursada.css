@@ -6,69 +6,46 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.IcoLocation{
-    /* Layout */
-    width: 19px;
-    height: 19px;
-    flex-shrink: 0;
-}
-
-.DetalleModalidadContainer{
-    /* Layout */
-    width: 176px;
-    display: flex;
-    align-items: center;
-    padding-top: 2px;
-}
-
-.DetalleModalidadTitulo{
-    /* Layou */
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     /* Typography */
     color: #000;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 19px;
-}
-
-.DetalleModalidad{
-    /* Layou */
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* Typography */
-    color: #000;
-    font-size: 14px;
+    font-size: 18px;
     font-family: Roboto;
     font-weight: 300;
     line-height: 19px;
 }
 
-.IcoCalendar{
-    margin-left: 3%;
-}
-
-.DetalleDuracionContainer{
+.DetalleContainer{
     /* Layout */
-    width: 137px;
+    position: relative;
+    width: auto;
     display: flex;
     align-items: center;
     padding-top: 2px;
+    margin-right: 10%;
+}
+.Ico{
+    margin-left: 10%;
 }
 
-.DetalleDuracionTitulo{
+.Ico:first-child{
+    margin-left: 0%;
+}
+
+.DetalleTitulo{
+    /* Layou */
+    display: flex;
+    flex-shrink: 0;
+    margin-left: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Typography */
+    font-weight: 500;
+}
+
+.Detalle{
     /* Layou */
     display: flex;
     flex-shrink: 0;
@@ -76,76 +53,25 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    /* Typography */
-    color: #000;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 19px;
 }
 
-
-.DetalleDuracion{
-    /* Layou */
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 4px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* Typography */
-    color: #000;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 300;
-    line-height: 19px;
+@media only screen and (max-width: 950px){
+    .DetalleCursadaContainer{
+        font-size: 14px;
+    }
 }
 
-.IcoClock{
-    margin-left: 3%;
+@media only screen and (max-width: 850px){
+    .DetalleContainer{
+        margin-top: 8px;
+    }
 }
 
-.DetalleFrecuenciaContainer{
-    /* Layout */
-    width: 137px;
-    display: flex;
-    align-items: center;
-    padding-top: 2px;
-}
-
-.DetalleFrecuenciaTitulo{
-    /* Layou */
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 5px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* Typography */
-    color: #000;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 500;
-    line-height: 19px;
-}
-
-
-.DetalleFrecuencia{
-    /* Layou */
-    display: flex;
-    flex-shrink: 0;
-    margin-left: 4px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    /* Typography */
-    color: #000;
-    font-size: 14px;
-    font-family: Roboto;
-    font-weight: 300;
-    line-height: 19px;
+@media only screen and (max-width: 800px){
+    .DetalleCursadaContainer{
+        margin-left: 5%;
+        display: inline;
+        justify-content: left;
+        height: auto;
+    }
 }

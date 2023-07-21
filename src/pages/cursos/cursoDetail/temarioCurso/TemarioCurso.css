@@ -1,5 +1,6 @@
 .TemasCursoContainer {
     /* Layout */
+    position: relative;
     margin-top: 3%;
     margin-left: 2%;
     width: 80%;
@@ -45,3 +46,27 @@
 
 
 
+@media only screen and (max-width: 700px){
+  .TemasCursoContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .TemasCursoContainer {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .InfoText{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 400px){
+  .TemasCursoContainer {
+    margin-left: 0;
+    width: 100%;
+  }
+}
