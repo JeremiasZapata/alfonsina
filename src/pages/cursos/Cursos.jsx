@@ -62,7 +62,7 @@ export const Cursos = () => {
                 alignItems="center"
                 >
                 {
-                    datosCursos.map((curso) => (
+                    datosCursos.filter((curso) => curso.nivel.nombre === 'Inicial').map((curso) => (
                         <Grid key={curso.nombre}>
                             <CardCursos curso={curso} key={curso.nombre}/>
                         </Grid>
@@ -70,9 +70,13 @@ export const Cursos = () => {
                 }
                 </Grid>
             </Box>
-            <div className="NivelText">
-            Nivel Profesional
-            </div>
+            {
+                datosCursos.filter((curso) => curso.nivel.nombre === 'Profesional').length > 0
+                ?<div className="NivelText">
+                    Nivel Profesional
+                </div>
+                :<></>
+            }
             <Box sx={{ flexGrow: 1 }} className="containerDivCursos">
                 <Grid
                 container
@@ -82,7 +86,7 @@ export const Cursos = () => {
                 alignItems="center"
                 >
                 {
-                    datosCursos.map((curso) => (
+                    datosCursos.filter((curso) => curso.nivel.nombre === 'Profesional').map((curso) => (
                         <Grid key={curso.nombre}>
                             <CardCursos curso={curso} key={curso.nombre}/>
                         </Grid>

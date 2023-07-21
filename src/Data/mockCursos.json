@@ -76,5 +76,145 @@
 			},
 			"valorExamenFinal": 0
 		}
+	},
+    {
+		"id":3,
+		"nombre": "Soft Gel",
+		"modalidad": "Presencial",
+		"incluyeCertificao": true,
+		"foto": "SoftGel.png",
+		"duracion": "3 clases",
+		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
+		"frecuencia": {
+			"clasesSemanal": 1,
+			"duracionHoras": 3
+		},
+		"nivel": {
+			"nombre": "Inicial",
+			"descripcion": "Conocimientos previos en Semipermanente"
+		},
+		"temario": [
+			"Correcta preparación de la uña natural.",
+			"Tipos de preparados químicos.",
+			"Técnica Express vs. Técnica Avanzada.",
+			"Service.",
+			"Retiro de producto.",
+			"Encapsulado, efectos, baby glam."
+		],
+		"valores": {
+			"inscripcion": {
+				"valor": 2500,
+				"bonoficadoExAlumnos": true
+			},
+			"cuota": {
+				"valor": 5500,
+				"cantidadCuotas": 1
+			},
+			"valorExamenFinal": 0
+		}
+	},
+    {
+		"id":4,
+		"nombre": "Nail Art - Integral Nivel 1",
+		"modalidad": "Presencial",
+		"incluyeCertificao": true,
+		"foto": "NailArtIntegralNivel1.png",
+		"duracion": "4 clases",
+		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
+		"frecuencia": {
+			"clasesSemanal": 1,
+			"duracionHoras": 3
+		},
+		"nivel": {
+			"nombre": "Inicial",
+			"descripcion": "Conocimientos previos en Semipermanente"
+		},
+		"temario": [
+			"Carga y forma de uso de pincel.",
+			"Aplicación de foil en todas sus variantes.",
+			"Tipos de efectos: polvos chrome, flakes, aurora, perla, holográfica.",
+			"Técnicas de degradé: uso de pinceles y esponjas.",
+			"Baby boomer.",
+			"Gradientes de dos, tres y cuatro colores.",
+			"Iconografías por contraste.",
+			"Técnicas de marble.",
+			"Piedras y geodas.",
+			"Fondos marmolados.",
+			"Encapsulado.",
+			"Correcta aplicación de papeles metálicos, escarchas, colas de sirenas, formas planas, apliques metálicos, fimos, nácar, flores secas, etc."
+		],
+		"valores": {
+			"inscripcion": {
+				"valor": 2500,
+				"bonoficadoExAlumnos": true
+			},
+			"cuota": {
+				"valor": 5500,
+				"cantidadCuotas": 1
+			},
+			"valorExamenFinal": 0
+		}
+	},
+    {
+		"id":5,
+		"nombre": "Nail Art - Vida Silvestre (¡Próximamente!)",
+		"modalidad": "Presencial",
+		"incluyeCertificao": false,
+		"foto": "NailArtVidaSilvestre.png",
+		"duracion": "4 meses",
+		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
+		"frecuencia": {
+			"clasesSemanal": 1,
+			"duracionHoras": 3
+		},
+		"nivel": {
+			"nombre": "Inicial",
+			"descripcion": "Conocimientos previos en Semipermanente"
+		},
+		"temario": [
+			"Aún no hay información disponible."
+		],
+		"valores": {
+			"inscripcion": {
+				"valor": 2500,
+				"bonoficadoExAlumnos": true
+			},
+			"cuota": {
+				"valor": 5500,
+				"cantidadCuotas": 1
+			},
+			"valorExamenFinal": 0
+		}
+	},
+    {
+		"id":6,
+		"nombre": "Uñas Esculpidas (¡Próximamente!)",
+		"modalidad": "Presencial",
+		"incluyeCertificao": false,
+		"foto": "UnasEsculpidas.png",
+		"duracion": "4 meses",
+		"objetivos": "nunc lectus lectus. Condimentum feugiat viverra tortor ornare. Leo id ornare egestas habitasse enim porttitor accumsan vitae aliquet.",
+		"frecuencia": {
+			"clasesSemanal": 1,
+			"duracionHoras": 3
+		},
+		"nivel": {
+			"nombre": "Inicial",
+			"descripcion": "Conocimientos previos en Semipermanente"
+		},
+		"temario": [
+			"Aún no hay información disponible."
+		],
+		"valores": {
+			"inscripcion": {
+				"valor": 2500,
+				"bonoficadoExAlumnos": true
+			},
+			"cuota": {
+				"valor": 5500,
+				"cantidadCuotas": 1
+			},
+			"valorExamenFinal": 0
+		}
 	}
 ]
