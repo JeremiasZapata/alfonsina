@@ -1,7 +1,7 @@
 import React from 'react';
 import Paper from '@mui/material/Paper';
 import './TemarioCurso.css'
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 export const TemarioCurso = ({ curso }) => {
     return (
