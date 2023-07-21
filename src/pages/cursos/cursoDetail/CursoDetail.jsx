@@ -5,6 +5,7 @@ import MOCK_DATA from '../../../Data/mockCursos.json';
 import './CursoDetail.css';
 
 import { DetalleCursada } from './detalleCursada/DetalleCursada';
+import { TemarioCurso } from './temarioCurso/TemarioCurso'
 
 export const pedirDatos = (bool) => {
     return new Promise((resolve, reject) => {
@@ -33,7 +34,7 @@ export const CursoDetail = () => {
         obtenerDatos();
     }, [cursoId]);
 
-    if(curso!=undefined){
+    if(curso != undefined){
         const imgFolder = require.context('../../assets/fotosCursos', false, /\.(png|jpe?g|svg)$/)
         const defaultFoto = "defaultFoto.png"
         const img_node = imgFolder(`./${curso.foto?curso.foto:defaultFoto}`);
@@ -53,16 +54,16 @@ export const CursoDetail = () => {
                         <div className="TittleContainer">
                         Temario general
                         </div>
-                        <div className="TemarioContainer">
-                            <ol className="lista InfoText">
-                                {
-                                    curso.temario.map((tema) => (
-                                    <li key={tema}>
-                                        {tema}
-                                    </li>
-                                    ))                                    
-                                }
-                            </ol>
+                        <TemarioCurso curso={curso}/>
+                        <div className="CertificadoContainer">
+                            {curso.incluyeCertificao
+                                ?<div className="CertificadoText">¡Incluye certificado de aprobación!</div>
+                                :<div></div>
+                            }
+                        </div>
+                        <div className="SobreKitContainer">
+                            <div className="SobreKitText">Kit de uñas</div>
+                            <div className="AvisoContainer">En nuestra academia no prestamos ningún kit, sino que alentamos a los estudiantes para que compren uno propio. Nuestro objetivo es alentar que sigan sus prácticas fuera de la clase.</div>
                         </div>
                     </div>
                     <div className="RightCursoDetalle">
