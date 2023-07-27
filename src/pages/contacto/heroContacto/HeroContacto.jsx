@@ -3,14 +3,11 @@ import './HeroContacto.css'
 
 export const HeroContacto = () => {
     return(
-    <div className="ContactoClass">
-        <div className="TextContactoContainer">
-            <div className="SubTitleContactoContainer">¡Contactate con nosotras!</div>
-
-            <div className="TitleContactoContainer">
-                <div className="TitleContacto">Tus dudas serán respondidas</div>
+        <div className="ContactoHeroContainer">
+            <div className="ContactoComponentContainer">
+                <div className="ContactoSubTituloClass">¡Contactate con nosotras!</div>
+                <div className="ContactoTituloClass">Tus dudas serán respondidas</div>
             </div>
         </div>
-    </div>
     );
 }

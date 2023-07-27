@@ -3,19 +3,11 @@ import './HeroSobreNosotras.css'
 
 export const HeroSobreNosotras = () => {
     return(
-        <div className="SobreNosotrasClass">
-            <div className="SobreNosotrasTituloClass">
-                <div className="SobreNosotrasSubTituloText">Lorem ipsum dolor sit amet consectetur.</div>
-                <div className="SobreNosotrasTituloText">Lorem impsum dolor</div>
-            </div>
-            <div className="ImagenesHeroContainer">
-                <div className="ImagenesIzq">
-
-                </div>
-                <div className="ImagenesDer">
-
-                </div>
-            </div>
+        <div className="AboutUsHeroContainer">
+        <div className="AboutUsComponentContainer">
+            <div className="AboutUsSubTituloClass">¡Cumplí tu meta!</div>
+            <div className="AboutUsTituloClass">Animate a conocernos, animate a crecer</div>
         </div>
-    );
+    </div>
+);
 }

@@ -15,7 +15,7 @@ const pages = [
     { nombre: 'Home', link: '/'},
     { nombre: 'Cursos', link: '/cursos'},
     { nombre: 'Sobre Nosotras', link: '/nosotras'},
-    { nombre: 'Contacto', link: '/contacto'}
+    { nombre: 'Preguntas Frecuentes', link: '/contacto'}
 ]
 
 export const CompactNavBar = () => {

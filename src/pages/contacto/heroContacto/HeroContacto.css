@@ -1,72 +1,60 @@
-.ContactoClass{
-    height: 508px;
+.ContactoHeroContainer{
     width: 100%;
+    height: 352px;
     left: 0px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background: #D9D9D9;
+    margin-bottom: 120px;
+    
     background-image: url('../../assets/backgroundImage.png')!important;
-    background-size: cover;
-    background-position: center;
-}
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
 
-.TextContactoContainer{
-    /* Layout */
-    width: 493px;
-    height: 119px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-
-.SubTitleContactoContainer{
-    /* Layout */
-    width: 404px;
-    height: 17px;
     flex-direction: column;
     justify-content: center;
-    display: flex;
-    position: absolute;
-    top: 0;
+    align-items: center;
+    flex-wrap: wrap;
 
-
-    /* Typography */
-    color: #000;
-    text-align: center;
-    font-size: 18px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
+    background: #D9D9D9;
 }
 
-
-.TitleContactoContainer{
+.ContactoComponentContainer{
     /* Layout */
     width: 493px;
-    height: 68px;
-    bottom: 0;
+    height: 246px;
+    top: 138px;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    position: absolute;
 }
 
-.TitleContacto{
-    /* typography */
-   
-    
-  
- 
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
+.ContactoSubTituloClass{
+    /* Layout */
+    display: flex;
+width: 365px;
+height: 37px;
+justify-content: center;
+align-items: center;
+flex-shrink: 0;
 
-    color: #000;
+    /* Typography */
+    color: #DA1972;
+text-align: center;
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.ContactoTituloClass{
+    /* layout */
+    width: 560px;
+    height: 155px;
+    flex-shrink: 0;
+    /* Typography */
+    color: #320817;
 text-align: center;
 font-family: Montserrat;
 font-size: 60px;
@@ -75,22 +63,3 @@ font-weight: 800;
 line-height: normal;
 }
 
-.ContactoTituloClass{
-    position: relative;
-    /* width: 492px;
-    height: 68px; */
-    /* left: calc(50% - 616px/2); */
-    /* top: 150px; */
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 48px;
-    line-height: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-
-    color: #000000;
-}
