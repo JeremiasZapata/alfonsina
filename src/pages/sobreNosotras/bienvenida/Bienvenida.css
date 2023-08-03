@@ -1,0 +1,27 @@
+.bienvenida {
+    background-color: blue;
+}
+
+.container .titulo {
+    /*layout*/
+    width: 1058px;
+    height: 67px;
+    flex-shrink: 0;
+
+    /* typografia*/
+    color: #320817;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+}
+
+.imagen1,.imagen2,.imagen3 {
+    width: 252px;
+    height: 252px;
+    flex-shrink: 0;
+}
